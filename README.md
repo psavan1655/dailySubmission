@@ -27,7 +27,7 @@ Push code to repository
   git add .
 
 # add comment to your local commit.
-  git commit -m "<your name - topics you submitted in file>
+  git commit -m "<your name - topics you submitted in file>"
 
 # change branch to interns.
   git branch -m interns
