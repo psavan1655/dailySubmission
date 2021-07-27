@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+.text *{
+    vertical-align:middle;
+   
+  }
+</style>
+<body>
+  <!-- simple form -->
+  <form>
+    <h3>simple form</h3>
+  <lable>name :</lable>
+  <input type="text" id="cc"><br>
+  <label for="lname">name:</label>
+  <input type="text" ><br>
+  <input type="submit" value="Submit">
+</form> <br>
+<!-- radio button -->
+<h3>radio button</h3>
+ <form>
+<lable>htnl</lable>
+<input type="radio" name="lang" value="html">
+<lable>python</lable>
+<input type="radio" name="lang" value="python" checked>
+<lable>php</lable>
+<input type="radio" name="lang" value="php" disabled>
+ </form><br><br>
+
+ <!-- check box -->
+ <h3>cheackbox</h3>
+ <form>
+   <lable>bike</lable>
+   <input type="checkbox" name="veh" value="bike" disabled>
+   <lable>car</lable>
+   <input type="checkbox" name="veh" value ="car" checked>
+   <lable>car2</lable>
+   <input type="checkbox" name="veh" value ="car2" >
+ </form><br><br>
+
+ <h3>validation </h3>
+ <form  validate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form><br><br>
+
+<!--option (drop down ,multiple selction ,size)  -->
+<h3>option,drop down </h3>
+<lable>option</lable>
+  <select id="xyz" name="abc">
+    <option>a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+  </select><br><br>
+
+  <!-- text area -->
+  <h3>textarea</h3>
+  <p class="text">
+  <lable>textarea</lable>
+  <textarea  rows="10" cols="20">
+       AZsx  
+  </textarea>
+</p>
+
+<!-- feild set and legend -->
+<h3>feild set and legend</h3>
+<fieldset>
+  <legend>heading</legend>
+  <lable>name</lable>
+  <input type="text" name="fname" value="hiral">
+</fieldset>
+<!-- datalist -->
+<h3>datalist</h3>
+<lable>datalist</lable>
+<input list="abc" name="browser">
+  <datalist id="abc ">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+      
+  </datalist>
+  <input type="submit">
+
+  <!-- color -->
+<h3>color</h3>
+  <lable>color</lable>
+  <input type="color" >
+  <input type="submit"><br>
+
+<!-- date -->
+<h3>date</h3>
+  <label >date</label>
+  <input type="date" name="date">
+  <input type="submit" value="Submit"><br>
+
+<!-- mail -->
+<h3>mail</h3>
+  <label >mail</label>
+  <input type="mail" value="mail"><br>
+  <!-- for validtion from validate -->
+
+  <!-- hidden -->
+<h3>mail</h3>
+<lable>name</lable>
+<input type="text" value="hiral" >
+<input type="hidden" value="cusID">
+<input type="submit">
+<br>
+</body>
+</html>
