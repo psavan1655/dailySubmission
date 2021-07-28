@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html input</title>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    th, td {
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+   <!-- 28-07-2021 -->
+   <fieldset>
+        <legend>Iframe</legend>
+        <iframe src="https://www.w3schools.com" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+        <p><a href="https://www.w3schools.com" target="iframe_a">w3schools</a></p>
+   </fieldset>
+   <fieldset>
+       <legend>Table useing colspan</legend>
+       <table>
+           <tr>
+               <th>F_name</th>
+               <th>L_name</th>
+               <th colspan="2">Phone</th>
+           </tr>
+           <tr>
+               <td>kevin</td>
+               <td>patel</td>
+               <td>9898989898</td>
+               <td>9898989898</td>
+           </tr>
+       </table>
+       <fieldset>
+       <legend>Table useing rowspan </legend>
+       <table>
+           <tr>
+               <th rowspan="2">Email</th>
+               <td>kevin@gmail.com</td>
+           </tr>
+           <tr>
+               <td>kevin011@gmail.com</td>
+           </tr>
+           <tr>
+               <th rowspan="3">Developer</th>
+               <td colspan="3">React js</td>
+               <td>Adonis Js</td>
+           </tr>
+           <tr>
+               <td>Node Js</td>
+           </tr>
+           <tr>
+                <td>Angular Js</td>
+           </tr>
+       </table>
+       </fieldset>
+        <fieldset>
+       <legend>Table useing rowspan-colspan </legend>
+       <table>
+           <tr>
+               <th>F_name</th>
+               <th>L_name</th>
+               <th colspan="2">Email</th>
+               <th colspan="3">Developer</th>
+               <th>Salary</th>
+               
+           </tr>
+           <tr>
+               <td>kevin</td>
+               <td>patel</td>
+               <td>kevin@gmail.com</td>
+               <td>kevin0111#gmail.com</td>
+                <td>React Js</td>
+               <td>Node Js</td>
+               <td>Adonis Js</td>
+             <td>12000</td>
+           </tr>
+       </table>
+       </fieldset>
+   </fieldset>
+   <!-- class-constructor in js  -->
+   <fieldset>
+       <legend>Class-constructor</legend>
+       <p id="newclass"></p>
+   </fieldset>
+   <script>
+       class Car{
+           constructor(name,year){
+               this.name=name;
+               this.year=year;
+           }
+           age(x){
+               return x -this.year
+           }
+       }
+       let date =new Date();
+       let year = date.getFullYear();
+
+       let mycar =new Car("Audi",2020);
+       document.getElementById("newclass").innerHTML="my car is" + mycar.age(year) +"Year old.";
+   </script>
+</body>
+</html>
+<!-- java -->
+//tight coupliy
+class Volume{  
+    public static void main(String args[]) {
+        Box b =new Box(3,5,4);
+        System.out.println(b.volume);
+    }
+}
+class Box{
+    public int volume;
+    Box(int length, int width, int height)
+    {
+        this.volume = length * width * height;
+    }
+}
+
+//Loose coupling
+class Volume{
+	public static void main(String args[]){
+		Box b =new Box(5,4,5);
+		System.out.println(b.getVolume());
+	}
+}
+final class Box{
+	private int volume;
+	Box(int length,int width, int height){
+		this.volume= length* width * height;
+	}
+	public int getVolume(){
+		return volume;
+	}
+}
