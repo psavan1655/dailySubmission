@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <title>Demo</title>
+  </head>
+  <body>
+    <script>
+        function onButtonClick ()
+        {
+            var abc =  document.getElementById('email').value;
+            var xyz = document.getElementById('password').value;
+                alert("Email is " + abc + "  password is " + xyz);
+        } 
+    </script>
+    <fieldset>
+      <legend><h5>Email-Tag Demo</h5></legend>
+      <h5>Email inputbox</h5>
+      <input type="email" name="email" id="email">Email
+      <input type="password" name="password" maxlength="8" minlength="1" id="password"/>Password
+      <input type="submit" onclick="onButtonClick()" value="submit">
+    </fieldset>
+    <fieldset>
+      <!-- Test code -->
+      <input
+        type="checkbox"
+        name="ahmedabad"
+        value="ahmedabd"
+        checked
+      />Ahmedabad
+      <legend><h5>Checbox -Demo</h5></legend>
+      <input type="checkbox" name="morbi" value="morbi" />Morbi
+      <input type="checkbox" name="ambaji" value="ambaji" />Ambaji
+      <input type="checkbox" name="surat" value="surat" />Surat
+    </fieldset>
+    <fieldset>
+        <legend>Radio</legend>
+        <input type="radio" value="male" name="r1" checked>Male
+    <input type="radio" value="male" name="r1">Female
+    </fieldset>
+    <fieldset>
+        <legend><h5>DropDown</h5></legend>
+        City:- <select name="city" > 
+            <option>Ahmedabad</option>
+            <option>Surat</option>
+            <option>Morbi</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend><h5>Color</h5>
+            <input type="color">
+        </legend>
+    </fieldset>
+    <fieldset>
+        <legend><h5>Date Time Local</h5>
+            <input type="datetime-local" value="#59656">
+        </legend>
+    </fieldset>
+    <fieldset>
+        <legend><h5>URl input</h5></legend>
+        <input type="url"  id="homepage" name="homepage">
+        <input type="submit" value="submit">
+    </fieldset>
+    <fieldset>
+        <legend><h5>Day</h5></legend>
+        <input type="week">
+    </fieldset>
+    <fieldset>
+      <legend><h5>Phone Number</h5></legend>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" minlength="1" maxlength="10">
+  </fieldset>
+  <fieldset>
+    <legend><h5>Time</h5></legend>
+    <input type="time" id="phone">
+</fieldset>
+  </body>
+</html>
