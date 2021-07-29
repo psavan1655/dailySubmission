@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table Data</title>
+  </head>
+  <style>
+    table,
+    td,
+    tr {
+      border: 1px solid brown;
+      border-collapse: collapse;
+    }
+  </style>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <th colspan="3">Sample Form</th>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <table style="border-collapse: collapse; width: 100%;">
+              <tr>
+                <td style="width: 50%;">
+                  Male:
+                  <input type="radio" name="r1" value="male" /> Female:<input
+                    size="10px"
+                    type="radio"
+                    name="r1"
+                    value="female"
+                  />
+                </td>
+                <td>
+                  One:<input type="checkbox" name="c1" value="one" /> Two:<input
+                    type="checkbox"
+                    name="c1"
+                    value="two"
+                  />
+                  Three:<input type="checkbox" name="c1" value="three" />
+                </td>
+                
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+           <td style="width: 150px;"></td>
+          <td style="width: 150px; text-align: center;">
+            <input
+              type="Submit"
+              value="Submit"
+              style="border: 2px solid black"
+            />
+          </td>
+          <td style="width: 150px;"></td>
+        </tr>
+        <tr>
+          <td rowspan="4">
+            <label> First Name:-</label><br />
+            <input type="text" label="First Name" /><br />
+            <label>Last Name:-</label> <br />
+            <input type="text" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
