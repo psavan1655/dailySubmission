@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Text Type </title>
+   <style>
+        table,th,td{
+            border: 1px solid rgb(71, 50, 35);
+            border-collapse: collapse;
+            padding: 2rem;
+        }
+        
+    </style>
+</head> 
+ 
+<body>
+    <div>
+        <h1> Example of Text-Type </h1>
+        <label for="fnm">First Name</label>
+        <input type="text" name="fname" id="fnm" size="width-50"><br><br>
+        <label for="lnm">Last Name</label>
+        <input type="text" name="lname" id="lnm">
+
+        <h1> Example of Password-Type</h1>
+        <label for="unm">User Name</label>
+        <input type="text" name="uname" id="unm"><br><br>
+        <label for="ps">Password</label>
+        <input type="Password" name="pass" id="ps">
+
+        <form action="/" class="card card-body">
+            <h1> Example of Submit-Type </h1>
+            <label for="nm">Name</label>
+            <input type="text" name="name" id="nm"><br><br>
+            <label for="ps1">Password</label>
+            <input type="Password" name="pass" id="ps1"><br><br>
+            <input type="submit" value="submit">
+        </form>
+
+        <form>
+            <h1> Example of Reset-Type </h1>
+            <label for="fnm1">First Name</label>
+            <input type="text" name="fname" id="fnm1" value=""><br><br>
+            <label for="lnm1">Last Name</label>
+            <input type="text" name="lname" id="lnm1"><br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+
+        <form>
+            <h1> Example of Radiobutton </h1>
+            <div>
+                <h4>Select Car</h4>
+                <input type="radio" name="car" value="dezire">
+                Dezire
+                <input type="radio" name="car" value="breeza">
+                Breeza
+                <input type="radio" name="car" value="ciaz">
+                Ciaz
+            </div>
+            <div>
+                <h4>Select bike</h4>
+                <input type="radio" name="bike" value="royalEnfield">
+                Royal royalEnfield
+                <input type="radio" name="bike" value="java">
+                Java
+                <input type="radio" name="bike" value="harlyDavidson">
+                Harly Davidson
+            </div>
+            <br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+
+        <form>
+            <h1> Example of Check-Box </h1>
+            <div>
+                <h4> Choose any 3 Hobbies </h4>
+                <input type="checkbox" name="hobby1" value="garba">
+                Garba
+                <input type="checkbox" name="hobby2" value="travel">
+                Travel
+                <input type="checkbox" name="hobby3" value="coding">
+                Coding
+                <br><br>
+                <input type="submit">
+                <input type="reset">
+        </form>
+
+        <h1> Example of Button <h1>
+                <input type="button" onClick="alert('Jay Shree Krishna...!!!')" value="onClick">
+                <input type="button" onClick="alert('Mahadev...!!!')" value="onClick">
+
+                <h1> Example of Color-Type </h1>
+                <label for="color"> Select color :- </label>
+                <input type="color" name="color" id="color" value="#ffffff"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1> Example of Date </h1>
+                <label for="date">Set your birth date</label>
+                <input type="date" name="date" id="date"><br><br>
+                <label for="date1">Enter the date before 01-01-2010</label>
+                <input type="date" name="date" id="date1" max="2010-01-01"><br><br>
+                <label for="date2">Enter the date after 01-01-2000</label>
+                <input type="date" name="date" id="date2" min="2000-01-01"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1> Example of Date-time </h1>
+                <label for="datetime">Select your birth date and time</label>
+                <input type="datetime-local" id="datetime"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1> Example of Email </h1>
+                <label for="email">Email Id</label>
+                <input type="email" id="email"><br><br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1> Example of File-Type </h1>
+                <label for="file">Please select a file</label>
+                <input type="file" name="file1" id="file"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1> Example of select multiple files </h1>
+                <label for="multifile">Add your documents</label>
+                <input type="file" name="files" id="multifile" multiple><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1>Example of Hidden-Type</h1>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <input type="hidden" id="clgnm" name="clgnm" value="gujuni"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1>Example of Month-type</h1>
+                <label for="monthyear">Expiry Date</label>
+                <input type="month" name="date" id="monthyear"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1>Example of Number-Type</h1>
+                <label for="marks">Marks</label>
+                <input type="number" name="marks" id="marks" min="50" step="5" max="100"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1>Example of Range-Type </h1>
+                <label for="range">Set brightness</label><br>
+                <button type="button" onClick="substractone">-</button>
+                <input type="range" name="range" id="range" max="100" min="0" step="1">
+                <button type="button" onClick="addone">+</button>
+
+                <h1>Example of Week</h1>
+                <label for="week">Set week</label>
+                <input type="week" name="week" id="week"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1>Example of Time</h1>
+                <label for="time">Add your birth-time</label>
+                <input type="time" name="time" id="time"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1>Example of Search-Type</h1>
+                <label for="search">Search what you want : </label>
+                <input type="search" name="search" id="search"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1> Example of URL</h1>
+                <label for="url">Enter your page url</label>
+                <input type="url" name="url" id="url"><br><br>
+                <input type="submit">
+                <input type="reset">
+
+                <h1> Example of Tel-Type</h1>
+                <label for="mno">Enter your phone number</label>
+                <input type="tel" name="number" id="mno" pattern=""><br><br>
+                <input type="submit">
+                <input type="reset">
+    </div>
+<br><br><br> 
+
+<table style="width: 25%">
+    <h1>Table</h1>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td rowspan="2">3</td>
+    </tr>
+    <tr>
+        <td colspan="2">4</td>
+        
+    </tr>
+    <tr>
+        <td rowspan="2">5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td colspan="2">8</td>
+    </tr>
+</table>
+<br><br>
+<table style="width: 50%;" >
+    <h1> chess board </h1>
+    <tr>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+    </tr>
+    <tr>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+    </tr>
+    <tr>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+    </tr>
+    <tr>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+        <td></td>
+        <td style="background-color:black"></td>
+    </tr>
+
+</table>
+ </body> 
+
+
+</html>
