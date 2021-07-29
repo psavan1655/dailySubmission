@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,32 @@
   <title>Document</title>
 </head>
 <style>
-.text *{
-    vertical-align:middle;
-   
-  }
- 
-  table, th, td {
-  border: 1px solid black;
-   border-collapse: collapse; 
-}
-th, td {
-  padding: 5px;
-  text-align: center;    
-}
+  .text * {
+    vertical-align: middle;
 
-/* .chess-board { 
+  }
+  table1{
+  border: none;}
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .div {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+  }
+
+  /* .chess-board { 
   border-collapse: collapse;
  }
 
@@ -34,54 +46,54 @@ th, td {
 
 
 
-tr.chessboard:nth-child(odd) td.chessboard:nth-child(even),
-tr.chessboard:nth-child(even) td.chessboard:nth-child(odd)
- {
-  background: black;
-}
+  tr.chessboard:nth-child(odd) td.chessboard:nth-child(even),
+  tr.chessboard:nth-child(even) td.chessboard:nth-child(odd) {
+    background: black;
+  }
 </style>
+
 <body>
   <!-- simple form -->
   <form>
     <h3>simple form</h3>
-  <lable>name :</lable>
-  <input type="text" id="cc"><br>
-  <label for="lname">name:</label>
-  <input type="text" ><br>
-  <input type="submit"  value="Submit">
-</form> <br>
-<!-- radio button -->
-<h3>radio button</h3>
- <form>
-<lable>htnl</lable>
-<input type="radio" name="lang" value="html">
-<lable>python</lable>
-<input type="radio" name="lang" value="python" checked>
-<lable>php</lable>
-<input type="radio" name="lang" value="php" disabled>
- </form><br><br>
+    <lable>name :</lable>
+    <input type="text" id="cc"><br>
+    <label for="lname">name:</label>
+    <input type="text"><br>
+    <input type="submit" value="Submit">
+  </form> <br>
+  <!-- radio button -->
+  <h3>radio button</h3>
+  <form>
+    <lable>htnl</lable>
+    <input type="radio" name="lang" value="html">
+    <lable>python</lable>
+    <input type="radio" name="lang" value="python" checked>
+    <lable>php</lable>
+    <input type="radio" name="lang" value="php" disabled>
+  </form><br><br>
 
- <!-- check box -->
- <h3>cheackbox</h3>
- <form>
-   <lable>bike</lable>
-   <input type="checkbox" name="veh" value="bike" disabled>
-   <lable>car</lable>
-   <input type="checkbox" name="veh" value ="car" checked>
-   <lable>car2</lable>
-   <input type="checkbox" name="veh" value ="car2" >
- </form><br><br>
+  <!-- check box -->
+  <h3>cheackbox</h3>
+  <form>
+    <lable>bike</lable>
+    <input type="checkbox" name="veh" value="bike" disabled>
+    <lable>car</lable>
+    <input type="checkbox" name="veh" value="car" checked>
+    <lable>car2</lable>
+    <input type="checkbox" name="veh" value="car2">
+  </form><br><br>
 
- <h3>validation </h3>
- <form  validate>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <input type="submit">
-</form><br><br>
+  <h3>validation </h3>
+  <form validate>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit">
+  </form><br><br>
 
-<!--option (drop down ,multiple selction ,size)  -->
-<h3>option,drop down </h3>
-<lable>option</lable>
+  <!--option (drop down ,multiple selction ,size)  -->
+  <h3>option,drop down </h3>
+  <lable>option</lable>
   <select id="xyz" name="abc">
     <option>a</option>
     <option value="b">b</option>
@@ -92,60 +104,60 @@ tr.chessboard:nth-child(even) td.chessboard:nth-child(odd)
   <!-- text area -->
   <h3>textarea</h3>
   <p class="text">
-  <lable>textarea</lable>
-  <textarea  rows="10" cols="20">
+    <lable>textarea</lable>
+    <textarea rows="10" cols="20">
        AZsx  
   </textarea>
-</p>
+  </p>
 
-<!-- feild set and legend -->
-<h3>feild set and legend</h3>
-<fieldset>
-  <legend>heading</legend>
-  <lable>name</lable>
-  <input type="text" name="fname" value="hiral">
-</fieldset>
-<!-- datalist -->
-<h3>datalist</h3>
-<lable>datalist</lable>
-<input list="abc" name="browser">
+  <!-- feild set and legend -->
+  <h3>feild set and legend</h3>
+  <fieldset>
+    <legend>heading</legend>
+    <lable>name</lable>
+    <input type="text" name="fname" value="hiral">
+  </fieldset>
+  <!-- datalist -->
+  <h3>datalist</h3>
+  <lable>datalist</lable>
+  <input list="abc" name="browser">
   <datalist id="abc">
     <option value="Internet Explorer">
     <option value="Firefox">
     <option value="Chrome">
     <option value="Opera">
     <option value="Safari">
-      
+
   </datalist>
   <input type="submit">
 
   <!-- color -->
-<h3>color</h3>
+  <h3>color</h3>
   <lable>color</lable>
-  <input type="color" >
+  <input type="color">
   <input type="submit"><br>
 
-<!-- date -->
-<h3>date</h3>
-  <label >date</label>
+  <!-- date -->
+  <h3>date</h3>
+  <label>date</label>
   <input type="date" name="date">
   <input type="submit" value="Submit"><br>
 
-<!-- mail -->
-<h3>mail</h3>
-  <label >mail</label>
+  <!-- mail -->
+  <h3>mail</h3>
+  <label>mail</label>
   <input type="mail" value="mail"><br>
   <!-- for validtion from validate -->
 
   <!-- hidden -->
-<h3>mail</h3>
-<lable>name</lable>
-<input type="text" value="hiral" >
-<input type="hidden" value="cusID">
-<input type="submit">
-<br><br>
+  <h3>mail</h3>
+  <lable>name</lable>
+  <input type="text" value="hiral">
+  <input type="hidden" value="cusID">
+  <input type="submit">
+  <br><br>
 
-<!-- <table style="width:100%">
+  <!-- <table style="width:100%">
   <tr>
     <td colspan="4">hesder</td>
     
@@ -177,7 +189,7 @@ tr.chessboard:nth-child(even) td.chessboard:nth-child(odd)
    
 </table><br> -->
 
-<!-- <table  style="width:100%">
+  <!-- <table  style="width:100%">
   <tr>
     <td colspan="3">1 header </td>
   </tr>
@@ -198,143 +210,143 @@ tr.chessboard:nth-child(even) td.chessboard:nth-child(odd)
 
 </table> -->
 
-<table style="width: 100%; border: 1; text-align: center;">
-  <!-- 1 -->
-  <tr>
-    <td colspan="3">1</td>
-    <td>2</td>
-    <td rowspan="3">3</td>
-    
-  </tr>
+  <table style="width: 100%; border: 1; text-align: center;">
+    <!-- 1 -->
+    <tr>
+      <td colspan="3">1</td>
+      <td>2</td>
+      <td rowspan="3">3</td>
 
-<!-- 2 -->
-  <tr>
-    <td>4</td>
-    <td rowspan="2">5</td>
-    <td>6</td>
-    <td>7</td>
-    
-  </tr>
+    </tr>
 
-<!-- 3 -->
-  <tr>
-    <td rowspan="2">8</td>
-    
-    <td>9</td>
-    <td>10</td>
-  </tr>
-<!-- 4 -->
-  <tr>
-    <td colspan="3">11</td>
-    <td>12</td>
-   
-    
-    
-  </tr>
-<!-- 5 -->
-  <tr>
-    <td>13</td>
-    <td>14</td>
-    <td colspan="3">15</td>
-    
-  </tr>
-</table>
-<br><br>
+    <!-- 2 -->
+    <tr>
+      <td>4</td>
+      <td rowspan="2">5</td>
+      <td>6</td>
+      <td>7</td>
+
+    </tr>
+
+    <!-- 3 -->
+    <tr>
+      <td rowspan="2">8</td>
+
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <!-- 4 -->
+    <tr>
+      <td colspan="3">11</td>
+      <td>12</td>
 
 
-<table   class="chess-board">
-  <!-- 1 -->
-  <tr>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-  </tr>
-  <!-- 2 -->
-  <tr>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-  </tr>
-  <!-- 3 -->
-  <tr>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-  </tr>
-  <!-- 4 -->
-  <tr>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-  </tr>
-  <!-- 5 -->
-  <tr>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-  </tr>
-  <!-- 6 -->
-  <tr>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-  </tr>
-  <!-- 7 -->
-  <tr>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-  </tr>
-  <!-- 8  -->
-  <tr>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-    <td class="dark"></td>
-    <td class="light"></td>
-  </tr>
 
-<!-- 64 box 2 4 6 8 = black that means 64%2==0 on 1 3 5 7 line 
+    </tr>
+    <!-- 5 -->
+    <tr>
+      <td>13</td>
+      <td>14</td>
+      <td colspan="3">15</td>
+
+    </tr>
+  </table>
+  <br><br>
+
+
+  <table class="chess-board">
+    <!-- 1 -->
+    <tr>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+    </tr>
+    <!-- 2 -->
+    <tr>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+    </tr>
+    <!-- 3 -->
+    <tr>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+    </tr>
+    <!-- 4 -->
+    <tr>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+    </tr>
+    <!-- 5 -->
+    <tr>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+    </tr>
+    <!-- 6 -->
+    <tr>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+    </tr>
+    <!-- 7 -->
+    <tr>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+    </tr>
+    <!-- 8  -->
+    <tr>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+      <td class="dark"></td>
+      <td class="light"></td>
+    </tr>
+
+    <!-- 64 box 2 4 6 8 = black that means 64%2==0 on 1 3 5 7 line 
           9 11 13 15 = black that means 64%2!=0 on 2 4 6 8 line-->
-  <script>
+    <!-- <script>
     
     var c=1;
     
@@ -367,41 +379,223 @@ tr.chessboard:nth-child(even) td.chessboard:nth-child(odd)
     }
     c++;
       row++;
-  </script>
-</table><br>
+  </script> -->
+  </table><br>
 
-<table class="chessboard">
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-    <td class="chessboard"></td>
-    <td class="chessboard"></td>
-    <td class="chessboard"></td>
-    <td class="chessboard"></td>
-    <td class="chessboard"></td>
-    <td class="chessboard"></td>
-    <td class="chessboard"></td>
-  </tr>
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-  </tr>
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-  </tr>
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-  </tr>
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-  </tr>
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-  </tr>
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-  </tr>
-  <tr class="chessboard">
-    <td class="chessboard"></td>
-  </tr>
-  
+  <table class="chessboard">
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+      <td class="chessboard"></td>
+      <td class="chessboard"></td>
+      <td class="chessboard"></td>
+      <td class="chessboard"></td>
+      <td class="chessboard"></td>
+      <td class="chessboard"></td>
+      <td class="chessboard"></td>
+    </tr>
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+    </tr>
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+    </tr>
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+    </tr>
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+    </tr>
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+    </tr>
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+    </tr>
+    <tr class="chessboard">
+      <td class="chessboard"></td>
+    </tr>
+  </table>
+  <br><br>
+
+  <!-- <script type="text/javascript">
+
+    // create a chess table 8x8.
+
+    var count = 0;
+
+while (count < 64)
+    {
+
+    if (count % 2 == 0)
+
+        {
+
+        if (count % 8 == 0 && count !=0)
+            {
+            document.write('<br/><div style="background-color:#000000;float:left;">&nbsp</div>');
+
+            }
+        else    
+            {
+            document.write('<div style="background-color:#000000;float:left;">&nbsp</div>');    
+            }
+        }
+
+    else
+
+        {
+        document.write('<div style="background-color:#FFFFFF;float:left;">&nbsp</div>');
+        }
+    /*  
+    */          
+    count++;
+    }
+</script> -->
+
+
+  <table style="width: 65%;">
+    <!-- 1 -->
+    <tr>
+
+      <td colspan="3">sample form</td>
+    </tr>
+    <!-- 2 -->
+    <tr>
+      <td colspan="3">
+        <table1 style="width: 100%; border: none;">
+          <tr>
+            <td>
+              <input type="radio" name="gender" value="male">
+              <lable for="gender">male</lable>
+              <input type="radio" name="gender" value="female" checked>
+              <lable for="gender">female</lable>
+            </td>
+
+            <td colspan="3" style="width: 60%;">
+              <input type="checkbox" name="one" value="one">
+              <lable for="one">one</lable>
+              <input type="checkbox" name="two" value="two" checked>
+              <lable for="two">two</lable>
+              <input type="checkbox" name="three" value="three">
+              <lable for="three">three</lable>
+            </td>
+          </tr>
+        </table1>
+      </td>
+    </tr>
+    <!-- 3 -->
+    <tr style="height: 75px;">
+      <td style="width: 33.33%;">1</td>
+      <td style="width: 33.33%;border: 2px solid black;"><input type="submit" value="submit">
+
+      </td>
+      <td style="width: 33.33%;">2</td>
+
+    </tr>
+    <!-- 4 -->
+    <tr style="height: 75px;">
+      <td rowspan="2">
+        <lable for="fname">First name:</lable><br>
+        <input type="text" name="fname" value="Hiral"><br>
+        <lable for="lname">Last name:</lable><br>
+        <input type="text" name="lname" value="patel">
+
+      </td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+
+    <!-- 5-->
+    <tr style="height: 75px;">
+
+      <td>5</td>
+      <td>6</td>
+    </tr>
+  </table>
+
+
+
+
+
+
+
+  <table style="width: 65%;">
+    
+
+
+  </table>
+  <br>
+
+
+
+  <table style="width: 100%;">
+    <!-- 1 -->
+    <tr>
+
+      <td colspan="3">sample form</td>
+    </tr>
+    <!-- 2 -->
+    <tr>
+      <td style="width: 30%;">
+        <input type="radio" name="gender" value="male">
+        <lable for="gender">male</lable>
+        <input type="radio" name="gender" value="female" checked>
+        <lable for="gender">female</lable>
+      </td>
+
+      <td style="width: 70%;">
+        <input type="checkbox" name="one" value="one">
+        <lable for="one">one</lable>
+        <input type="checkbox" name="two" value="two" checked>
+        <lable for="two">two</lable>
+        <input type="checkbox" name="three" value="three">
+        <lable for="three">three</lable>
+      </td>
+
+
+    </tr>
+
+    <!-- 3 -->
+    <tr style="height: 55px;">
+      <td>1</td>
+      <td style="border: 2px solid black;"><input type="submit" value="submit">
+
+      </td>
+      <td>2</td>
+
+    </tr>
+    <!-- 4 -->
+    <tr></tr>
+    <!-- 5 -->
+    <tr>
+      <td rowspan="4">
+        <lable for="fname">First name:</lable><br>
+        <input type="text" name="fname" value="Hiral"><br>
+        <lable for="lname">Last name:</lable><br>
+        <input type="text" name="lname" value="patel">
+
+      </td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+
+
+    <!-- 6 -->
+    <tr></tr>
+    <!-- 7-->
+    <tr>
+
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <!-- 8 -->
+    <tr></tr>
+
+  </table>
+  <br>
+
+
+
 </body>
+
 </html>
