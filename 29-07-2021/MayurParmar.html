@@ -7,30 +7,38 @@
 
 <body>
     <form>
-        <table border="1" style="border-collapse: collapse; margin-top: 10%;" align="center">
+        <table border="1" style="border-collapse: collapse; margin-top: 10%; width: 600px;" align="center">
             <tr>
                 <th colspan="3">Sample Form</th>
             </tr>
             <tr>
-                <td>
-                    <input type="radio" name="gender" id="male" value="male" required />
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="female" value="female" required />
-                    <label for="female">Female</label>
-                </td>
-                <td colspan="2">
-                    <input type="checkbox" name="number" id="one" value="one" />
-                    <label for="one">One</label>
-                    <input type="checkbox" name="number" id="two" value="two" />
-                    <label for="two">Two</label>
-                    <input type="checkbox" name="number" id="three" value="three" />
-                    <label for="three">Three</label>
+                <td colspan="3" style="padding: 0;">
+                    <table
+                        style="border-collapse: collapse; border-top: 0px; border-bottom: 0px; width: 100%; margin: 0;"
+                        border="1">
+                        <tr>
+                            <td style="width:50%">
+                                <input type="radio" name="gender" id="male" value="male" required />
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female" required />
+                                <label for="female">Female</label>
+                            </td>
+                            <td style="width: 50%;">
+                                <input type="checkbox" name="number" id="one" value="one" />
+                                <label for="one">One</label>
+                                <input type="checkbox" name="number" id="two" value="two" />
+                                <label for="two">Two</label>
+                                <input type="checkbox" name="number" id="three" value="three" />
+                                <label for="three">Three</label>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td style="padding: 40px; text-align: center;"><button type="submit">Submit</button></td>
-                <td style="width: 100px;"></td>
+                <td style="width: 200px;"></td>
+                <td style="padding: 40px; width: 200px; text-align: center;"><button type="submit">Submit</button></td>
+                <td style="width: 200px;"></td>
             </tr>
             <tr>
                 <td rowspan="2">
