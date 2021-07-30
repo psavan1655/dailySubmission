@@ -1,0 +1,153 @@
+body{
+  background-color:black ;
+
+}
+/* .body1{
+  background-image: linear-gradient(
+    to bottom right, black,rgb(71, 71, 190)
+  );
+     width: 100%;
+} */
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  li {
+    display: inline;
+  }
+  a{
+      
+      font-size: large;
+      padding: 14px;
+      }
+
+.header{
+    
+    
+    overflow:auto;
+    text-align: center;
+    padding: 14px 16px;
+
+    display: block;
+  }
+  li a:hover:not(.active) {
+    background-color:transparent;
+    border-radius: 5px;
+    border-color: white;
+    border: 1px solid white; 
+  }
+  
+  
+  .navbar{
+    float: left;
+    padding: 14px 16px;
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+    width: 8%; 
+    text-align: center;
+  }
+  .navbar4{
+    float: left;
+    padding:14px;
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+    width: 8%; 
+    text-align: center;
+  }
+
+.navbar2{
+      float: left;
+      color: orangered;
+  }
+.navbar3{
+    float: right;
+    color:white;
+    display: inline;
+    margin-right: 31px;
+    margin-left: -17px;
+    padding: 11px;
+    border-radius: 5px;
+    width: 96px;
+    background-color:transparent;
+
+}
+.content{
+    color: white;
+    font-weight:bold;
+    
+     margin-top: 7rem;
+     margin-left: 7rem;
+     font-stretch: ultra-expanded;
+     font-size:3rem;
+
+}
+
+
+  .circle{
+    height: 70px; width: 70px; border-radius: 50%; border:1px solid blanchedalmond;
+    line-height: 15px;
+    color: white;
+    margin-left: 10rem;
+    text-align: center;
+  }
+  .vl {
+    border-right: 1px solid white;
+    height: 5rem;
+    /* display: inline; */
+    margin-left:6rem;
+    margin-top: -5rem;
+    
+    
+
+  }
+  .chakli{
+    width: 50%;
+    height:50%;
+    float: right;
+    margin-top: -312px;
+    margin-right: 35px;
+    /* margin-bottom: 5rem; */
+  }
+
+.content2{
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+   margin-top: 4rem;
+   margin-left: 7rem;
+   font-stretch: ultra-expanded;
+   
+
+
+}
+/* footer{
+  color: white;
+  font-weight: 200;
+  font-family: fantasy;
+  margin-bottom: 0rem;
+
+} */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color:rgb(108, 85, 168);
+  text-align: start;
+}
+
+
+/* .button{
+  float: right;
+  color:white;
+  display: inline;
+  margin-right: 92px;
+  margin-left: -15px;
+  background-color: purple;
+} */
