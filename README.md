@@ -30,7 +30,7 @@ Push code to repository
   git commit -m "<your name - topics you submitted in file>"
 
 # change branch to interns.
-  git branch -m interns
+  git switch interns
 
 # pull changes of other interns
   git pull
