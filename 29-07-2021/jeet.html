@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                
+                border-collapse: collapse;
+                padding: 2rem;  
+          }
+        td ,th{
+            border: 1px solid black;
+                border-collapse:collapse;
+                padding: 1rem;  
+        }
+
+                .submit{
+                    border: 2px solid rgb(5, 49, 34);
+                    width: 40px;
+                }
+                .submit2{
+                    border-bottom: 2px solid brown;
+                    border-top:2px solid brown;
+                    border-left: 2px solid brown;
+                    border-right: 2px solid brown;
+                    
+                }
+                .submit3{
+                    width: 32.9%;
+                    border-bottom: 0px;
+                    border-top:2px solid brown;
+                    border-left: 2px solid brown;
+                    border-right: 3px solid brown;
+                }
+                
+                td.bachhan{
+                    border-bottom: 3px solid brown;
+                    border-left: 3px solid brown;
+                    border-right: 3px solid brown;
+                    border-top: 2px solid brown;
+                }
+
+       </style>
+        
+    </head>
+    <body>
+        <table class="submit3">
+            <tr>
+                <th colspan="3"> Sample Form</th>
+            </tr>
+            <tr >
+                
+                <td style="border-top: 3px solid brown;">
+                <input type="radio" value="male" name="radio">
+                <label for="male">Male</label>
+                <input type="radio" value="female" name="radio">
+                <label for="female">Female</label>
+                </td>
+                <td style="border-top: 3px solid brown;">
+                    <input type="checkbox" value="one" name="one">
+                    <label for="one">One</label> 
+                    <input type="checkbox" value="two" name="two">
+                    <label for="two">Two</label> 
+                    <input type="checkbox" value="three" name="three">
+                    <label for="three">Three</label>  </td>
+                    </tr>
+               </table>
+                    <table class="submit2">
+                        <tr style="height: 4rem;">
+                            <td style="border-top: 0px;">1</td>
+                            <td class="bachhan"> <input type="submit" value="Submit" style="margin-left: 2rem;"></td>
+                                <td style="border-top: 0px;">3</td>
+                              </tr>
+                            <tr style="height: 4rem;">
+                                <td style="width:25%;" rowspan="2">
+                                    <label for="fname">First Name</label><br>
+                                    <input type="text" name="fname" id="fname" size="4"><br><br>
+                                    <label for="lname">Last Name</label><br>
+                                    <input type="text" name="lname" id="lname" size="4">
+                                </td>
+                                <td> 2 </td>
+                                <td style="width: 25%;">3</td>
+                            </tr>
+                            <tr style="height: 4rem;">
+                                
+                                <td style="width: 25%;"> 2 </td>
+                                <td>3</td>
+                            </tr>
+                    </table>
+    </body>
+</html>
