@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>registration form</h2>
+    <!-- <p>The <strong>input type="text"</strong> registration form:</p> -->
+
+    <form action="./actionsubmit.html">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="richa"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="kothari"><br>
+        <label for="pwd">password</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <input type="submit" value="Submit"><br>
+
+
+        <h3>choose your fav_hobbies</h3>
+        <input type="radio" id="dancing" name="fav_hobbies" value="dancing">
+        <label for="dancing">dancing</label><br>
+        <input type="radio" id="exploring" name="fav_hobbies" value="exploring">
+        <label for="exploring">exploring</label><br>
+        <input type="radio" id="reading" name="fav_hobbies" value="reading">
+        <label for="reading">reading</label> <br>
+        <input type="submit" value="Submit"><br>
+
+
+        <h3>choose your fav_food</h3>
+        <input type="checkbox" id="food1" name="food1" value="pizza">
+        <label for="food1">pizza</label><br>
+        <input type="checkbox" id="food2" name="food2" value="panipuri">
+        <label for="food2">panipuri</label><br>
+        <input type="checkbox" id="food3" name="food3" value="pav-bhaji">
+        <label for="food3">pav-bhaji</label><br>
+        <input type="submit" value="Submit"><br>
+
+
+        <h3>press this button </h3>
+        <input type="button" onclick="alert('!hey there')" value="press "><br>
+
+
+        <h3>select your fav_color</h3>
+        <label for="favcolor">color </label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+        <input type="submit" value="Submit"><br>
+
+
+        <h3>select your birthday</h3>
+        <label for="birthday">select your birthday</label><br>
+        <input type="datetime-local" id="birthday" name="birthday"><br>
+        <input type="submit" value="Submit"><br>
+
+        <h3>select your birthday month</h3>
+       <label for="birthday">select your birthday month</label><br>
+        <input type="month" id="birthday" name="birthday"><br>
+        <input type="submit" value="Submit"><br>
+
+        <h3>select quantity</h3>
+       <label for="quantity">choose quantity from(1-10):</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+        <input type="submit" value="Submit"><br>
+
+        <h3>change volume</h3>
+        <label for="volume">select volume from (1 to 100):</label><br>
+        <input type="range" id="🔈" name="volume" min="0" max="100"><br>
+        <input type="submit" value="Submit"><br>
+
+
+        <h3>enter selected date</h3>
+        <label for="maxdate">choose date before 1990-01-01 </label><br>
+        <input type="date" id="maxdate" name="maxdate" max="1990-01-01"><br>
+        <label for="mindate">choose date after 2005-01-01</label><br>
+        <input type="date" id="mindate" name="mindate" min="2005-01-01"><br>
+        <input type="submit" value="Submit"><br>
+
+        <h3>enter your email</h3>
+        <label for="email">enter your email </label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Submit"><br>
+
+        <h3>select file</h3>
+        <label for="myfile">select your file</label><br>
+        <input type="file" id="myfile" name="myfile"><br>
+        <!-- <input type="file" id="myfile" name="myfile" multiple> if you want to choose multiplefile<br> -->
+        <input type="submit" value="Submit"><br>
+
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+        <input type="submit" value="Submit"><br>
+
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> 
+        <input type="submit" value="Submit"><br>
+
+        <h3>search</h3>
+        <label for="gsearch">google search</label><br>
+        <input type="search" id="gsearch" name="gsearch"><br> 
+        <input type="submit" value="Submit"><br>
+        <!-- <input type="reset"> -->
+        <p>this is your registration form</p>
+
+
+
+
+            <style>
+                table,th ,td {
+                    border:  1px solid black;
+                    border-collapse: collapse;
+                }
+                 th,td{
+                     padding: 15px;
+                 }
+                 th{
+                     text-align: center;
+                 }
+                 table{
+                     border-spacing: 20px;
+                 }
+                 #t01{
+                     width: 100%;
+                 }
+                 #t01 th{
+                     color: cornsilk;
+                     background-color: black;
+                 }
+                 #t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+            </style>
+    <table id="t01">
+            <caption>your personal diary</caption>
+        <tr>
+          <th>name</th>
+          <th  >hobby</th>
+          <th>age</th>
+
+        </tr>
+        <tr>
+          <td >richa</td>
+          <td >dancing</td>
+          <td>20</td> 
+        </tr>
+        <tr>
+           <td>ruchit</td>
+           <td >volleyball</td>
+           <td>22</td> 
+        </tr>
+        <tr>
+           <td>harsh</td>
+           <td >exploring</td>
+           <td>21</td>
+        </tr>
+         </table>
+   
+    <style>
+     
+      table,th,td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,td{
+          text-align: center;
+      }
+      #nested2table table td {border:none}
+      
+
+    </style>
+        <table style="width: 600px">
+          <tr >
+            <td colspan="3" style="width:600px" >sample form</td>
+          </tr>
+          <tr>
+            <td >
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">female</label>
+            </td>
+             
+            <td  colspan="2" >
+              <input type="checkbox" id="one" name="one" value="one" />
+              <label for="one">one</label>
+              <input type="checkbox" id="two" name="two" value="two" />
+              <label for="two">two</label>
+              <input type="checkbox" id="three" name="three" value="three" />
+              <label for="three">three</label>
+            </td>
+          </tr>
+           <tr>
+            <td colspan="3" style="text-align:center;padding: 0px;">
+                <table style="margin-left:40%;width:20%;border: 2px solid blue !important;">
+                    <tr style="text-align: center;" >
+                        <td><input type="submit" value="Submit"/></td>
+                    </tr>
+                </table>
+            </td>
+          </tr> 
+           <tr >
+            <td colspan="3" style="text-align:center;padding: 0px;">
+                <table id="nested2table" style="border: 0px;">
+                    <tr>
+                        <td rowspan="2" width="200px" style="border-top: 0px; border-bottom: 0px;border-left: 0px; border-right: 1px;">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname" value="" /> <br/>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname" value="" />
+                        </td>
+                        <td width="200px"></td>
+                        <td width="200px"></td>
+                    </tr>
+                    <tr>
+                       
+                        <td> </td> 
+                         <td> </td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+</html>

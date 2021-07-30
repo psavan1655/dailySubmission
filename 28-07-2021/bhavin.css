@@ -1,0 +1,20 @@
+table,
+th,
+td {
+    border-spacing:0;
+
+  border: 1px solid rgb(12, 10, 10);
+  border-collapse: collapse;
+  /* width: 40%; */
+
+  /* padding-bottom: 5rem; */
+  /* box-sizing: inherit; */
+  padding: 2rem;
+
+  background : rgb(250, 248, 248);}
+  .chess-board .light { background: rgb(7, 6, 6); }
+        .chess-board .dark { border: 3px solid rgb(12, 10, 10); }
+        .chess-board  { border: 3px solid rgb(12, 10, 10); }
+      /* .chess-board  .test1 { border-spacing: 4rem ;  padding: 0%;
+        width: auto;
+    } */
