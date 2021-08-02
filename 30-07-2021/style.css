@@ -1,0 +1,117 @@
+.checked {
+    color: orange;
+  }
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image:url("webimg.svg");  */
+  
+    background: rgb(8, 8, 8);
+    background: linear-gradient(90deg, rgb(81, 81, 88) 0%, rgb(90, 88, 72) 50%, rgb(150, 115, 2) 100%),url("webimg.svg");
+        }
+.main{
+    width: 100%;
+    
+     /* background-size: 150px;
+    width: 300px;
+     height: 300px;
+    background-position:right;
+    */
+    height: 100vh;
+   
+}
+
+.navbar{
+  
+    margin: auto;
+    height: 75px;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    color: white;
+
+}
+.logo{
+  
+    font-size: 35px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family:serif ;  
+    color: white;
+    }
+
+
+ul{
+    display: flex; 
+    overflow: hidden;   
+}
+li{
+
+ list-style: none;
+ margin-left: 62px;
+ margin-top: 35px;  
+}
+li a { 
+
+transition: 0.4s ease-in-out;
+color: white;
+text-align: center;
+
+font-size: 17px;
+text-decoration: none;
+}
+
+
+li a:hover {
+color:#ee560f;
+} 
+
+
+.menu {
+    display: flex; 
+    
+}
+/* .menu-right{
+    float:inline-end;
+    text-align: right;
+} */
+.right{
+    padding-left: 500px;
+    
+}
+.content{
+     /* width:2000px;
+    height:120px; */
+    margin-left: 100px; 
+    color: black;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 20px;
+    line-height: 40px;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 45px;
+    
+}
+
+.btn{
+   
+    padding: 10px;
+    width:100px;
+    text-align:center;
+    background-color: orangered;
+    font-size: x-small;
+    border-radius: 5px;
+}
+
+.circle {
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+}
