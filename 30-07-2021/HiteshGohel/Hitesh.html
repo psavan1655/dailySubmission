@@ -7,6 +7,10 @@
     <title>30 July WebPage</title>
     <link rel="stylesheet" href="style.css" />
 
+    <link
+      rel="link icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuB-ZGV6JWz7WTo8MSnbVwMk0JEMK-uCWEhVcFUi3RU36FJ7UJ2PMhx9cAyVh3_qimU44&usqp=CAU"
+    />
     <!-- font Play -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,6 +27,37 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(window).resize(function () {
+        if ($(this).width() > 480) {
+          $(".sideBar").hide();
+          $(".sideBar-content").hide();
+          $(".content-class").show();
+          $(".footer-class").show();
+        } else {
+          $(".sideBar").show();
+        }
+      });
+
+      var a = 0;
+      function sideBarPopup() {
+        a = a + 1;
+        if (a % 2 == 0) {
+          document.querySelector(".sideBar-content").style.display = "block";
+          $(".content-class").hide();
+          $(".footer-class").hide();
+          $(".openToggle").hide();
+          $(".closeToggle").show();
+        } else {
+          document.querySelector(".sideBar-content").style.display = "none";
+          $(".content-class").show();
+          $(".footer-class").show();
+          $(".openToggle").show();
+          $(".closeToggle").hide();
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -30,17 +65,17 @@
       <!-- header -->
       <header class="nav-class">
         <div class="nav-header-div">
-          <a href="#" class="li-header-link">
+          <a href="#dashboard" class="li-header-link">
             <span class="span-header">MR</span>
             studio
           </a>
         </div>
 
         <ul class="nav-class-ul">
-          <li><a href="#" class="li-links">Home</a></li>
-          <li><a href="#" class="li-links">About Us</a></li>
-          <li><a href="#" class="li-links">Services</a></li>
-          <li><a href="#" class="li-links">Contact</a></li>
+          <li><a href="#home" class="li-links">Home</a></li>
+          <li><a href="#about-us" class="li-links">About Us</a></li>
+          <li><a href="#services" class="li-links">Services</a></li>
+          <li><a href="#contact" class="li-links">Contact</a></li>
         </ul>
 
         <div class="btn-class">
@@ -48,6 +83,44 @@
           <button class="signUp-btn">Sign Up</button>
         </div>
       </header>
+
+      <!-- sidebar -->
+      <div class="toggle-button">
+        <!-- sidebar button -->
+        <div class="sideBar">
+          <button class="sideBar-btn" onclick="sideBarPopup()">
+            <i class="fas fa-bars openToggle"></i>
+            <i class="fas fa-times closeToggle" style="display: none"></i>
+          </button>
+        </div>
+
+        <!-- sidebar List -->
+        <div class="sideBar-content">
+          <ul class="sideBar-content-ul">
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#home"
+                ><i class="fas fa-home sideBar-content-icon"></i>Home</a
+              >
+            </li>
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#about-us">
+                <i class="fas fa-id-card sideBar-content-icon"></i>About Us</a
+              >
+            </li>
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#services"
+                ><i class="fas fa-tools sideBar-content-icon"></i>Services</a
+              >
+            </li>
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#contact">
+                <i class="fas fa-address-book sideBar-content-icon"></i
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <!-- middle content -->
       <div class="content-class">
@@ -84,7 +157,7 @@
 
           <!-- content footer -->
           <div class="content-footer">
-            <p><b>Make your meet</b></p>
+            <b style="color: #9e8a9a">Make your meet</b>
             <section class="content-footer-buttons">
               <button class="signUp-btn">Try it free</button>
               <button class="watch-btn">
@@ -97,13 +170,15 @@
 
         <!-- image -->
         <div class="image-class">
-          <img
-            src=".\undraw_Outdoor_adventure_re_j3b7.svg"
-            alt="Demo"
-            width="95%"
-            height="550"
-            class="svg-img"
-          />
+          <div style="display: flex; justify-content: center">
+            <img
+              src=".\undraw_Outdoor_adventure_re_j3b7.svg"
+              alt="Demo"
+              width="90%"
+              height="550"
+              class="svg-img"
+            />
+          </div>
         </div>
       </div>
 
