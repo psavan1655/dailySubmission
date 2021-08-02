@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --green: green;
+    --heading: #b66556;
+    --font_link: #776879;
+}
+
+body {
+    background-image: linear-gradient(to right, #252235, #0C0F17, #51433a);
+}
+
+.color {
+    color: var(--heading)
+}
+
+.button {
+    background-color: var(--heading);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    color: var(--font_link);
+    text-transform: capitalize;
+    padding: 2rem 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.main {
+    height: 71vh;
+    width: 100vw;
+}
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer p {
+    margin: 2rem 5rem;
+    color: var(--white);
+}
+
+.header-link ul {
+    list-style: none;
+}
+
+.header-link li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 16px;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: var(--font_link)
+}
+
+.header-form ul {
+    list-style: none;
+}
+
+.header-form li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 16px;
+}
+
+.header-form a {
+    text-decoration: none;
+    color: var(--font_link)
+}
+
+.main-section-details {
+    margin: 1rem 5rem;
+    height: 100%;
+    display: flex;
+    
+}
+.main-section {
+    width: 40%;
+    margin: auto;
+}
+
+.main-image {
+    width: 60%;
+    background-image: url(./undraw_Outdoor_adventure_re_j3b7.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-heading {
+    font-family: 'Play', sans-serif;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: var(--white)
+}
+
+.main-rating-number {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-rating {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-rating-year {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.main-rating-year p {
+    margin-top: 1rem;
+}
+
+.main-rating-number h3 {
+    font-size: 1.5rem;
+}
+
+.main-rating-number p {
+    text-align: center;
+}
+
+.main-sub-heading {
+    color: var(--font_link);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.button_main {
+    margin-top: 2rem;
+    margin-right: 20px;
+    outline: none;
+    background-color: #b66556;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.button_watch {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 480px & max-width: 500px) {
+    body {
+        background-image: url('./undraw_Outdoor_adventure_re_j3b7.svg');
+    }
+}
