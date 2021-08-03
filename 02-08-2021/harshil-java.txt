@@ -1,0 +1,187 @@
+public class Pelindrom {
+    public static void main(String args[]){
+    int sum=0;
+    int n=45752,temp,r;
+    temp=n;
+    while(n > 0)
+    {
+        r = (n % 10);
+        sum = (sum * 10) + r;
+        n = n /10;
+    }
+    if(temp == sum)
+    {
+        System.out.println("This is Pelindrom Number");
+    }
+    else{
+        System.out.println("This is Not Pelindrom Number");
+    }
+}   
+}
+
+
+
+
+public class Pattern {
+     public static void main(String[] args) {
+            
+            for(int i=0; i<5; i++ )
+            {
+                for(int j=5; j>=i ; j--)
+                {
+                        System.out.print("*");
+                }
+                System.out.println();
+            }
+            for(int i=0; i<5; i++ )
+            {
+                for(int j=0; j<=i ; j++)
+                {
+                        System.out.print("*");
+                }
+                System.out.println();
+            }        
+    }
+}
+
+class vehicle{
+	public void vehicledetail()
+	{
+		System.out.println("hello i am Odi");
+	}
+}
+class audi extends vehicle{
+	public void getsubvehicle()
+	{
+		System.out.println("this is audi car");
+	}		
+}
+class maincar extends audi{
+	public static void main(String args[])
+	{
+			maincar mn = new maincar();
+			mn.getsubvehicle();
+	}
+}
+
+
+class electronic {
+    public void type() {
+        System.out.println("electronic type is Fridge");
+    }
+}
+
+class Fridge extends electronic {
+    public void brand() {
+        System.out.println("Brand of Fridge is Whirpool");
+    }
+}
+
+class Multilevel extends Fridge {
+    public void brandname() {
+        System.out.println("this is whirpool brand Fridge");
+    }
+
+    public void price() {
+        System.out.println("The price of whirpool is 80000");
+    }
+
+    public static void main(String args[]) {
+        Multilevel m = new Multilevel();
+        m.type();
+        m.brand();
+        m.brandname();
+        m.price();
+    }
+}
+
+interface client {
+    void webdesign();
+    void webdeveloper();
+}
+abstract class devlop implements client{
+    @Override
+    public void webdesign()
+    {
+        System.out.println("hello we are epistic webdesigner");
+    }
+
+    
+}
+class hp  extends devlop{
+    public void webdeveloper()
+    {
+        System.out.println("hello we are epistic webdeveloper");
+    }
+
+}
+class payment {
+    public static void main(String args[])
+    {
+        hp  p = new hp();
+        p.webdesign();
+         p.webdeveloper();
+    }
+}
+
+import java.util.*;
+interface employee{
+    void getdata();
+    void setdata();
+}
+class client implements employee{
+    String name;
+    double sal;
+   public void getdata()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter Data of employee");
+        name = sc.nextLine();
+        System.out.println("Enter Salary of employee");
+        sal = sc.nextDouble();
+    }
+    public void setdata()
+    {
+        System.out.println("Name is" + name);
+        System.out.println("Salary is" + sal);
+    }
+    public static void main(String args[])
+    {
+        client c = new client();
+        c.getdata();
+        c.setdata();
+    }
+    
+}
+
+abstract class main{
+    abstract void  d_type();
+}
+class vehicle  extends main{
+    public void work() {
+        System.out.println("this is Drone For using Shoot Video");
+    }
+
+    public void d_type(String t) {
+        System.out.println("string is " + t);
+    }
+
+    public void work(int capacity) {
+        System.out.println("Capicity of Drone is" + capacity);
+    }
+    
+    void d_type() {
+            System.out.println("this is 5 fan Drone");
+    }
+}
+
+class Drone extends vehicle {
+    public static void main(String args[]) {
+        Drone d1 = new Drone();
+        d1.work();
+        d1.work(125);
+        d1.d_type("hello awt same Drone");
+        d1.d_type();
+
+    }
+}
