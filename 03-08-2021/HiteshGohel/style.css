@@ -23,32 +23,46 @@ html {
   border: 1px solid black;
 }
 
-.flex-item-row {
-  min-height: 100px;
-}
-
-.flex-item-col {
-  min-width: 100px;
-  min-height: 151px;
-}
-
-.col-1 {
-  min-height: 50px;
-}
-
 .right-cols {
   background-color: lightyellow;
 }
 
 .right-col-1 {
-  height: 24vh;
+  height: 178px;
+  width: 96%;
   min-height: 75px;
   background-color: lavender;
 }
 
 .right-col-2 {
   min-height: 125px;
+  width: 96%;
   background-color: lavender;
+}
+
+.box1and2 {
+  min-height: 100px;
+  background-color: lightgray;
+  min-height: 100px;
+  background-color: lightgray;
+}
+
+.box3 {
+  min-width: 100px;
+  min-height: 60px;
+  background-color: lightblue;
+}
+
+.box4 {
+  min-width: 100px;
+  min-height: 140px;
+  background-color: lightblue;
+}
+
+.box-5 {
+  min-width: 150px;
+  margin: 1px 1px 1px 10px;
+  background: lavenderblush;
 }
 
 #slider {
@@ -110,9 +124,10 @@ html {
   }
 
   .flex-items {
-    width: 99%;
+    width: 98%;
     margin: 2px;
     border: 1px solid black;
+    border-collapse: collapse;
   }
 
   .right-div-class {
@@ -121,5 +136,9 @@ html {
 
   .box-5 {
     margin: 0 !important;
+  }
+
+  #textarea {
+    width: 98%;
   }
 }
