@@ -1,0 +1,89 @@
+.navbar{
+    /* background-color : rgb(197, 159, 159); */
+    text-decoration-color : white;	
+    height: 5rem;
+}
+ 
+h1{
+
+    width: 30%;
+    margin-right: 50px;
+}
+.btn{
+        background-color: rgb(50, 25, 158);
+        color: aliceblue;
+        float: right;
+        text-decoration: none;
+
+
+        
+
+} 
+
+.container{
+    flex-direction: column;
+}
+
+body{
+
+    background-color: #000000;
+    /* background-image: url("C:\Users\bhavin gajjar\OneDrive\Desktop\practiice\html\DAILYSUBMISSION\dailySubmission\28-07-2021\undraw_Outdoor_adventure_re_j3b7.svg and 4 more pages - Personal - Microsoft​ Edge 30-07-2021 12_05_23 (2).png"); */
+    
+    
+
+}
+a:hover{
+    background-color: #dccce0;
+}
+header{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+p{
+    margin-top: 1rem;
+    font-size: 20px;
+    color: white;
+}
+.href{
+    text-decoration: none;
+}
+
+.test2{
+    height: 6rem;
+    width: 6rem;
+    align-items: center;
+    border: 2px solid rgb(248, 245, 245);
+    border-bottom-left-radius: 66px;
+    border-bottom-right-radius: 66px;
+    border-top-left-radius: 66px;
+    border-top-right-radius: 66px;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 2rem;
+    margin-left: 1rem;
+
+
+
+}
+
+
+
+
+
+.bacchan{
+             border-left: 2px solid rgb(248, 245, 245);
+             margin-left: 50px;
+             height: 6rem;
+
+}
+.mrg{
+margin-left: 5rem;
+/* border-block-end-color: aqua;
+border-radius: 50px;
+border-color: white  ; */
+
+}
