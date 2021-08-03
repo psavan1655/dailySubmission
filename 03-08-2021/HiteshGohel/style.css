@@ -62,10 +62,28 @@ body {
   animation: 10s slider infinite;
 }
 
-/* #slider figure img {
+#slider figure img {
   width: 33%;
   float: left;
-} */
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  33% {
+    left: 0;
+  }
+
+  67% {
+    left: -100%;
+  }
+
+  100% {
+    left: -200%;
+  }
+}
 
 /* @media only screen and (max-width: 480px) {
   .flex-container-row {
