@@ -12,7 +12,6 @@ class vehicle {
     //     ("104 km/h ");
     // }
         
- 
 }
 
 let loads;
@@ -31,7 +30,6 @@ class truck extends vehicle{
         this.tyres=tyres
     }
 }
-
 
 
 const myvehicle = new vehicle("vw-polo", "2021", 4);
