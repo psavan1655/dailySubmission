@@ -1,0 +1,96 @@
+.flex-container{
+    background-color: aqua;
+    display: flex;
+  
+    
+}
+.flextbox-item {
+    background-color: yellowgreen;
+    border: 2px solid black;
+    margin: 10px;
+    width: 200px;  
+     /* height: 50px; */
+}
+/* ------1,2,5,6,7-------- */
+.item12567{
+    flex-direction: column;
+    display: flex;
+}
+            .item12{
+                flex-direction: row;
+                display: flex;
+            }
+            .flexbox-tem-1{
+                height:100px ;
+            }
+
+            .flexbox-tem-2{
+                height:100px ;
+            }
+
+/* ---------3---------- */
+.item3{
+    align-items: stretch;
+    display: flex;
+}
+
+        .flexbox-tem-3{
+            height:430px ;
+        }
+
+/* -------4,8---------- */
+.item48{
+    flex-direction:column;
+     display: flex;
+}
+
+        .flexbox-tem-4{
+            height:300px ;
+        }
+
+        .flexbox-tem-8{
+            height:100px ;
+        }
+
+
+/* -----5,6,7------------ */
+.item567{
+    display: flex;
+    flex-direction:row;
+   
+
+}
+/* -----5,6------ */
+        .item56{
+            display: flex;
+            flex-direction: column;
+           
+
+        }
+        .flexbox-tem-5{
+            height:130px ;
+            width: 100px;
+        }
+        .flexbox-tem-6{
+            height:140px ;
+            width: 100px;
+        
+        }
+/* ----7---- */
+/* .item7{
+    align-items: center;
+
+   
+} */
+            .flexbox-tem-7{
+                height:300px ;
+                width: 300px;
+                margin-left: 10px;
+            
+            }
+             .text{
+               overflow: scroll;
+                 height:130px ;
+                 width: 100px;
+                
+             }
