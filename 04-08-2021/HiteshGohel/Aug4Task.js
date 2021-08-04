@@ -3,8 +3,8 @@ const firstDecimal = 4.0
 const firstString = 'HackerRank'
 
 function dataType (secondInteger, secondDecimal, secondString) {
-  return `${firstInteger + secondInteger};\n${firstDecimal +
-    secondDecimal};\n${firstString + secondString}`
+  return `${firstInteger + parseInt(secondInteger)};\n${firstDecimal +
+    parseFloat(secondDecimal)};\n${firstString + secondString}`
 }
 
 // function dataType (secondInteger, secondDecimal, secondString) {
