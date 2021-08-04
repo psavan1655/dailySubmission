@@ -91,4 +91,15 @@
 
 
   
-  
+/* img{
+    height: 20% !important;
+    width:  1000px ;
+    border: 1px solid red;
+} */
+ /* img {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    min-height: 130px;
+   min-width: 175%;
+} */
