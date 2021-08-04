@@ -1,6 +1,7 @@
 // array in javascript
 var a = new Array(); // optional line
 a = ["mayur", "parmar", "kishorbhai", "shubham"];
+a.push("raj", "mk", "dsdsd", "dsdsd", "dsdsadsa", "dsdsadsad");
 // console.log(a);
 
 // traversal of array
