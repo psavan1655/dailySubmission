@@ -1,0 +1,102 @@
+
+.slider{
+    cursor: none;
+    display:flex;
+    height: h;
+    border: 1px solid black;
+}
+a{
+    
+    background-color:pink;
+    text-decoration: none;
+    color: purple;
+}
+
+img{
+    width: 90vw;
+    height:40vh;
+}
+.flexmain
+{
+    /* border-style: dotted; */
+    display: flex;
+    /* border: 1px solid rgb(154, 170, 154); */
+}
+.flexbox-container
+{
+    /* flex-wrap: wrap; */
+     display: flex;
+     /* border: 1px solid red; */
+}
+
+.flexbox-item
+{
+   
+    width:23vw;
+    height: 20vh;
+    border: 1px solid black;
+    /* background-color: blanche; */
+}
+.flexbox-item-1
+{
+ 
+    height: 40vh;
+      flex-grow: 1;
+      align-self: flex-start;
+}
+.flexbox-item-2
+{
+ 
+    align-self: flex-start;
+    flex-grow: 1;
+    min-height: 40vh;
+}
+.flexbox-item-3
+{
+    
+    height: 85vh;;
+    flex-shrink: 0;
+}
+.flexbox-item-4
+{
+    flex-shrink: 0;
+    height:60vh ;
+}
+.flexbox-item-5
+{
+    height: 21.7vh;
+}
+.flexbox-item-6
+{
+    height: 21.8vh;  
+}
+.scro
+{
+     overflow: auto;
+     overflow-x: hidden;
+}
+.flexbox-item-7
+{
+
+    height: 44vh;
+    flex-grow: 2;
+}
+.flexbox-item-8
+{
+    min-height: 25.0vh;
+}
+.flexbox-itemsm
+{
+
+    width:10vw;
+    border: 1px solid black;
+    /* background-color: blanchedalmond; */
+}
+
+.flexbox-itemsm1
+{
+
+    width:40vw;
+    border: 1px solid black;
+    /* background-color: blanchedalmond; */
+}
