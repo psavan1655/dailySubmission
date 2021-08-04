@@ -1,4 +1,4 @@
-body {
+html {
   margin: 0;
   padding: 0;
 }
@@ -23,31 +23,46 @@ body {
   border: 1px solid black;
 }
 
-.flex-item-row {
-  min-height: 100px;
-}
-
-.flex-item-col {
-  min-width: 100px;
-  min-height: 100px;
-}
-
-.col-1 {
-  min-height: 50px;
-}
-
 .right-cols {
-  max-width: 250px;
-  height: 100vh;
-  max-height: 260px;
+  background-color: lightyellow;
 }
 
 .right-col-1 {
-  height: 50vh;
-  max-height: 150px;
+  height: 178px;
+  width: 96%;
+  min-height: 75px;
+  background-color: lavender;
 }
 
 .right-col-2 {
+  min-height: 125px;
+  width: 96%;
+  background-color: lavender;
+}
+
+.box1and2 {
+  min-height: 100px;
+  background-color: lightgray;
+  min-height: 100px;
+  background-color: lightgray;
+}
+
+.box3 {
+  min-width: 100px;
+  min-height: 60px;
+  background-color: lightblue;
+}
+
+.box4 {
+  min-width: 100px;
+  min-height: 140px;
+  background-color: lightblue;
+}
+
+.box-5 {
+  min-width: 150px;
+  margin: 1px 1px 1px 10px;
+  background: lavenderblush;
 }
 
 #slider {
@@ -62,15 +77,44 @@ body {
   animation: 10s slider infinite;
 }
 
-/* #slider figure img {
+#slider figure img {
   width: 33%;
   float: left;
-} */
+}
 
-/* @media only screen and (max-width: 480px) {
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  33% {
+    left: 0;
+  }
+
+  67% {
+    left: -100%;
+  }
+
+  100% {
+    left: -200%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .flex-container-row {
     display: flex;
-    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container-col {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .flex-container-row {
+    display: block;
   }
 
   .flex-container-col {
@@ -78,4 +122,23 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
   }
-} */
+
+  .flex-items {
+    width: 98%;
+    margin: 2px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .right-div-class {
+    display: block;
+  }
+
+  .box-5 {
+    margin: 0 !important;
+  }
+
+  #textarea {
+    width: 98%;
+  }
+}
