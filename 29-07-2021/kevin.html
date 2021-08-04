@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainTableClass, th, td {
+        /* .mainTableClass, th, td { */
+            border: 1px solid blue;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        .submit{
+            border: 2px solid black;
+            text-align: center;
+        }
+        .width{
+                width: 34%;
+        }
+        .check{
+            text-align: center;
+        }
+        .tabletwo{
+            border-bottom: none;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .kevin{
+            border-bottom: none;
+            border-top: none;
+            border-right: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <table class="mainTableClass">
+       <tr>
+        <th colspan="3" class="mainTH">Simple Table</th>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <table class="tabletwo">
+        <tr>
+           <td style="width: 50%;">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+           </td style="width: 50%;">
+            <td class="check" class="kevin">
+                <input type="checkbox" id="v_1" name="v_1" value="Cars">
+                <label for ="v_1">Audi</label>
+                <input type="checkbox" id="v_2" name="v_2" value="bike">
+                <label for="v_1">R1 1000</label>
+                <input type="checkbox" id="v_2" name="v_2" value="bike">
+                <label for="v_1">RR 1000</label>
+            </td>
+       </tr>
+   </table>
+    </td>
+</tr>
+ <tr>
+           <td  class="width"></td>
+           <td class="submit">
+               <input type="submit" value="Submit">
+           </td>
+           <td class="width"></td>
+       </tr>
+          <tr>
+           <td rowspan="2">
+               <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" value="Fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" value="Lname">
+            </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="1"></td>
+                <td></td>
+            </tr>
+   </table>
+</body>
+</html>

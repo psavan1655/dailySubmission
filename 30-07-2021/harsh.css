@@ -1,0 +1,53 @@
+body{
+    /* background-color: black; */
+    background-image: linear-gradient(
+        to bottom right, black, white
+    );
+    
+}
+
+.sub{
+    margin-left: 10px;
+}
+
+li{
+    display: inline;
+    margin: 10px;
+    padding-left: 10px;
+}
+ul{
+    list-style-type:none;
+    padding: 10px;    
+    color: white;
+}
+.navbar{
+    /* background-color: black; */
+    padding: 10px;
+  
+    
+}
+.sup1{
+    color: white;
+    font-size: 20px;
+}
+.circle{
+        width: 90px;
+        height: 90px;
+        line-height: 15px;
+        border-radius: 50%;
+        border: 1px solid white;
+        color: white;
+        text-align: center;
+}
+
+.vl{
+    border-left: 2px solid white;
+    height:6rem;
+    margin-left: 25px;
+}
+.text{
+    color: white;
+}
+.checked{
+    color: #faa301;
+}

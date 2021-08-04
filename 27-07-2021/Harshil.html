@@ -5,6 +5,15 @@
     
     <title>Demo</title>
   </head>
+  <style>
+    table,th,td{
+        border: 1px solid black;
+        width:40%;
+    }
+    th{
+        height: 35px;
+    }
+  </style>
   <body>
     <script>
         function onButtonClick ()
@@ -13,15 +22,21 @@
             var xyz = document.getElementById('password').value;
                 alert("Email is " + abc + "  password is " + xyz);
         } 
+        function onSelectFile()
+        {
+          var getfile =document.getElementById('file').value;
+          alert(getfile);
+        }
     </script>
     <fieldset>
       <legend><h5>Email-Tag Demo</h5></legend>
       <h5>Email inputbox</h5>
-      <input type="email" name="email" id="email">Email
+      <input type="email" name="email" id="email" pattern="$[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">Email
       <input type="password" name="password" maxlength="8" minlength="1" id="password"/>Password
       <input type="submit" onclick="onButtonClick()" value="submit">
     </fieldset>
     <fieldset>
+      <!-- Test code -->
       <input
         type="checkbox"
         name="ahmedabad"
@@ -75,5 +90,137 @@
     <legend><h5>Time</h5></legend>
     <input type="time" id="phone">
 </fieldset>
+<fieldset>
+  <legend><h5>file</h5></legend>
+  <input type="file" id="file" name="file" onchange="onSelectFile()">
+</fieldset>
+<table>
+  <th>
+      Name
+  </th>
+  <th>
+      Designation
+  </th>
+  <th>
+      Country
+  </th>
+  <tr>
+      <td rowspan="2">Kevin</td>
+      <td>Doctor</td>
+      <td>Australia</td>
+  </tr>
+  <tr>
+      <!-- <td>Harshil</td> -->
+      <td>Phrama</td>
+      <td>India</td>
+  </tr>
+ <tr>
+     <td>Hitesh</td>
+     <td>Engineer</td>
+     <td>England</td>
+ </tr> 
+ <tr>
+     <td>Saif</td>
+     <td>Developer</td>
+     <td>India</td>
+ </tr>
+</table>
+****************************************
+<table>
+  <th>
+      Item/Desc.
+  </th>
+  <th>
+      Qty.
+  </th>
+  <th>
+      @
+  </th>
+  <th>
+      Price
+  </th>
+  <tr>
+      <td>PaperClips(Box)</td>
+      <td>100</td>
+      <td>1.15</td>
+      <td>115.00</td>
+  </tr>
+  <tr>
+      <td>Paper(Case)</td>
+      <td>10</td>
+      <td>45.99</td>
+      <td>459.90</td>
+  </tr>
+  <tr>
+      
+          <td>Waste paper Basket</td>
+          <td>2</td>
+          <td>17.99</td>
+          <td>35.98</td>
+      
+  </tr>
+  <tr>
+      <th colspan="3">
+          Subtotal
+      </th>
+      <td>610.88</td>
+  </tr>
+  <tr>
+      <th colspan="2">
+          Tax
+      </th>
+      <td>
+          7%
+      </td>
+      <td>42.76</td>
+  </tr>
+  <tr>
+      <th colspan="3">
+          Total
+      </th>
+      <td>
+          653.64
+      </td>
+  </tr>
+</table>
   </body>
 </html>
+
+
+
+<!-- Java -->
+
+
+class Volume
+{
+	public static void main(String args[])
+	{
+		Box b = new Box(5,5,5);
+		System.out.println(b.volume);
+	}
+}
+class Box
+{
+	public int volume;
+	Box(int length, int width, int height)
+	{
+		this.volume = length * width * height;
+	}
+}
+
+class Cube
+{
+		public static void main(String args[])
+		{
+			Numeric n = new Numeric();
+			n.calculate(3);
+		}
+}
+class Numeric{
+	int ans;
+	public void calculate(int a)
+	{
+			ans= a * a * a;
+			System.out.println(ans);
+	}
+}

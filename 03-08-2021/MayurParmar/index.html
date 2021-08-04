@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create By Mayur</title>
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        var a = 2;
+        function me() {
+            setInterval(() => {
+                a = a + 1;
+                if (a % 2 == 0) {
+                    document.getElementById('a1').click();
+                } else {
+                    document.getElementById('a2').click();
+                }
+            }, 2000)
+        }
+    </script>
+</head>
+
+<body onload="me()">
+
+    <mian>
+        <section class="silder">
+            <div class="silder-img">
+                <img src="https://picsum.photos/1500/400?grayscale" id="1" alt="image1" />
+                <img src="https://picsum.photos/1500/400/?blur" alt="image2" id="2" />
+            </div>
+            <div class="silder-a">
+                <a href="#1" id="a1">1</a>
+                <a href="#2" id="a2">2</a>
+            </div>
+        </section>
+
+        <section class="flex">
+
+            <div class="flex-demo">
+                <div class="flex-container-1">
+                    <div class="flex-item-1-1">
+                    </div>
+                    <div class="flex-item-1-1"></div>
+                </div>
+                <div class="flex-container-2-main">
+                    <div class="flex-container-2">
+                        <div class="flex-item-2">
+                        </div>
+                        <div class="flex-item-2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ducimus voluptatem beatae
+                            quibusdam voluptatum cumque praesentium earum? Rerum eos quisquam harum nihil obcaecati ipsa
+                            possimus, necessitatibus excepturi nisi voluptates quos dolores numquam suscipit quod
+                            debitis odit magni velit quo fugit.
+                        </div>
+                    </div>
+                    <div class="flex-container-2-1">
+                        <div class="flex-item2-main">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" flex-container-3">
+                <div class="flex-item-3-1"></div>
+            </div>
+            <div class="flex-container-4">
+                <div class="flex-item-4-1"></div>
+                <div class="flex-item-4-2"></div>
+            </div>
+
+        </section>
+    </mian>
+</body>
+
+</html>

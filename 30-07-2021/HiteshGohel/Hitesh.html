@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 July WebPage</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="link icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuB-ZGV6JWz7WTo8MSnbVwMk0JEMK-uCWEhVcFUi3RU36FJ7UJ2PMhx9cAyVh3_qimU44&usqp=CAU"
+    />
+    <!-- font Play -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(window).resize(function () {
+        if ($(this).width() > 480) {
+          $(".sideBar").hide();
+          $(".sideBar-content").hide();
+          $(".content-class").show();
+          $(".footer-class").show();
+        } else {
+          $(".sideBar").show();
+        }
+      });
+
+      var a = 0;
+      function sideBarPopup() {
+        a = a + 1;
+        if (a % 2 == 0) {
+          document.querySelector(".sideBar-content").style.display = "block";
+          $(".content-class").hide();
+          $(".footer-class").hide();
+          $(".openToggle").hide();
+          $(".closeToggle").show();
+        } else {
+          document.querySelector(".sideBar-content").style.display = "none";
+          $(".content-class").show();
+          $(".footer-class").show();
+          $(".openToggle").show();
+          $(".closeToggle").hide();
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header class="nav-class">
+        <div class="nav-header-div">
+          <a href="#dashboard" class="li-header-link">
+            <span class="span-header">MR</span>
+            studio
+          </a>
+        </div>
+
+        <ul class="nav-class-ul">
+          <li><a href="#home" class="li-links">Home</a></li>
+          <li><a href="#about-us" class="li-links">About Us</a></li>
+          <li><a href="#services" class="li-links">Services</a></li>
+          <li><a href="#contact" class="li-links">Contact</a></li>
+        </ul>
+
+        <div class="btn-class">
+          <button class="login-btn">Login</button>
+          <button class="signUp-btn">Sign Up</button>
+        </div>
+      </header>
+
+      <!-- sidebar -->
+      <div class="toggle-button">
+        <!-- sidebar button -->
+        <div class="sideBar">
+          <button class="sideBar-btn" onclick="sideBarPopup()">
+            <i class="fas fa-bars openToggle"></i>
+            <i class="fas fa-times closeToggle" style="display: none"></i>
+          </button>
+        </div>
+
+        <!-- sidebar List -->
+        <div class="sideBar-content">
+          <ul class="sideBar-content-ul">
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#home"
+                ><i class="fas fa-home sideBar-content-icon"></i>Home</a
+              >
+            </li>
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#about-us">
+                <i class="fas fa-id-card sideBar-content-icon"></i>About Us</a
+              >
+            </li>
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#services"
+                ><i class="fas fa-tools sideBar-content-icon"></i>Services</a
+              >
+            </li>
+            <li class="sideBar-content-li" onclick="sideBarPopup()">
+              <a class="sideBar-links" href="#contact">
+                <i class="fas fa-address-book sideBar-content-icon"></i
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- middle content -->
+      <div class="content-class">
+        <div class="content-header-text">
+          <!-- heading -->
+          <div>
+            <h1 class="content-class-h1">
+              <span class="span-header">Great Meetings</span>
+              Are Just the Beginning
+            </h1>
+          </div>
+
+          <!-- user and ratings -->
+          <div class="content-center">
+            <div class="content-user">
+              <span style="font-size: 22px">20k</span>
+              <span>user</span>
+            </div>
+            <div class="vertical-line-class"></div>
+            <div>
+              <p>
+                <span style="font-size: 25px; font-weight: bolder">
+                  <i
+                    class="fas fa-star"
+                    style="color: #6c63ff; font-size: 20px; margin-right: 5px"
+                  ></i>
+                  4.9
+                </span>
+                Rating
+              </p>
+              <p class="content-class-p">Last Updated June 2021</p>
+            </div>
+          </div>
+
+          <!-- content footer -->
+          <div class="content-footer">
+            <b style="color: #9e8a9a">Make your meet</b>
+            <section class="content-footer-buttons">
+              <button class="signUp-btn">Try it free</button>
+              <button class="watch-btn">
+                <i class="fas fa-arrow-up"></i>
+                Watch how it works
+              </button>
+            </section>
+          </div>
+        </div>
+
+        <!-- image -->
+        <div class="image-class">
+          <div style="display: flex; justify-content: center">
+            <img
+              src=".\undraw_Outdoor_adventure_re_j3b7.svg"
+              alt="Demo"
+              width="90%"
+              height="550"
+              class="svg-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer-class">
+        <span class="span-footer">
+          Share the video, photos, audio in one app :
+          <i class="fas fa-arrow-down" style="margin: 0px 2px"></i>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>28 July 2021</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 0px;
+      }
+      .table-class {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        border: 1px solid gray;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center">Table Example with CSS</h1>
+    <div class="table-class">
+      <table>
+        <tr>
+          <th colspan="3" style="height:50px">Sample Form</th>
+        </tr>
+        <tr>
+          <td colspan="3">
+              <div style="display:flex; justify-content:space-around;">
+                  <div style="width:250px; padding:10px; text-align:center">
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+                  <div style="width:250px; padding:10px; border-left: 1px solid black; text-align: center">
+                    <input type="checkbox" name="One" value="male">One
+                    <input type="checkbox" name="Two" value="male">Two
+                    <input type="checkbox" name="Three" value="female">Three
+                </div>
+              </div>
+          </td>
+        </tr>
+        <tr>
+           <td style="width:150px; height:50px"></td> 
+           <td style="border: 2px solid black;">
+               <div style="display:flex; justify-content:center; margin: auto auto;">
+                   <button>Submit</button>
+               </div>
+           </td> 
+           <td style="width:150px; height:50px"></td> 
+        </tr>
+        <tr>
+           <td rowspan="2">
+            <div style="display:flex; flex-direction:column;justify-content:center; margin: auto auto; padding: 5px;">
+                <div style="display:flex; flex-direction:column;">
+                    <label for="firstName" style="text-align: center;">First Name</label>
+                    <input type="text" name="firstName"><br>
+                </div>
+                <div style="display:flex; flex-direction:column;">
+                    <label for="lastName" style="text-align: center;">Last Name</label>
+                    <input type="text" name="lastName">
+                </div>
+            </div>
+           </td> 
+           <td style="width:150px; height:50px"></td> 
+           <td style="width:150px; height:50px"></td> 
+        </tr>
+        <tr>
+           <td style="width:150px; height:50px"></td> 
+           <td style="width:150px; height:50px"></td> 
+        </tr>
+      </table>
+    </div>
+
+    <h1 style="text-align:center">Nested Table Example</h1>
+    <div class="table-class">
+      <table>
+        <tr>
+          <th colspan="3" style="height:50px">Sample Form</th>
+        </tr>
+        <tr>
+          <td colspan="3">
+              <table style="width:100%;">
+                  <tr style="width:50%; text-align: center; height:50px;">
+                      <td>
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female
+                      </td>
+                      <td style="width:50%; text-align: center">
+                            <input type="checkbox" name="One" value="male">One
+                            <input type="checkbox" name="Two" value="male">Two
+                            <input type="checkbox" name="Three" value="female">Three
+                      </td>
+                  </tr>
+              </table>
+          </td>
+        </tr>
+        <tr>
+           <td style="width:150px; height:50px"></td> 
+           <td>
+               <div style="display:flex; justify-content:center; margin: auto auto;">
+                   <button>Submit</button>
+               </div>
+           </td> 
+           <td style="width:150px; height:50px"></td> 
+        </tr>
+        <tr>
+           <td rowspan="2">
+            <div style="display:flex; flex-direction:column;justify-content:center; margin: auto auto; padding: 5px;">
+                <div style="display:flex; flex-direction:column;">
+                    <label for="firstName" style="text-align: center;">First Name</label>
+                    <input type="text" name="firstName"><br>
+                </div>
+                <div style="display:flex; flex-direction:column;">
+                    <label for="lastName" style="text-align: center;">Last Name</label>
+                    <input type="text" name="lastName">
+                </div>
+            </div>
+           </td> 
+           <td style="width:150px; height:50px"></td> 
+           <td style="width:150px; height:50px"></td> 
+        </tr>
+        <tr>
+           <td style="width:150px; height:50px"></td> 
+           <td style="width:150px; height:50px"></td> 
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

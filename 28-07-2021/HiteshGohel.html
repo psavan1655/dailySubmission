@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 July 2021</title>
+    <style>
+        table, tr, th, td{
+            border: 1px solid black;border-collapse: collapse;padding: 5px
+        }
+        .table-class {
+            display: flex; justify-content:space-around; margin:10px; border: 1px solid gray; padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Table Example</h1>
+    <div class="table-class">
+        <table>
+            <caption style="margin: 10px;">Table 1 - <mark>"colspan"</mark> Example</caption>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Company</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <td>9878789878</td>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <td>9878789878</td>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <td>9878789878</td>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <td rowspan="2">9878789878</td>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <!-- <td>9878789878</td> -->
+            </tr>
+        </table>
+        
+        <table>
+            <caption style="margin: 10px;">Table 2 - <mark>"rowspan"</mark> Example</caption>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <th rowspan="5">Account Info</th>
+                <td>Hitesh Gohel</td>
+                <td>h@gmail.com</td>
+                <td>8978788978</td>
+            </tr>
+            <tr>
+                <td>Hitesh Gohel</td>
+                <td>h@gmail.com</td>
+                <td>8978788978</td>
+            </tr>
+            <tr>
+                <td>Hitesh Gohel</td>
+                <td>h@gmail.com</td>
+                <td>8978788978</td>
+            </tr>
+            <tr>
+                <td>Hitesh Gohel</td>
+                <td>h@gmail.com</td>
+                <td>8978788978</td>
+            </tr>
+            <tr>
+                <td>Hitesh Gohel</td>
+                <td>h@gmail.com</td>
+                <td>8978788978</td>
+            </tr>
+        </table>
+
+        <table>
+            <caption style="margin: 10px;">Table 3 - <mark>"rowspan"</mark> Example 2</caption>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>Hitesh Gohel</td>
+                <td>h@gmail.com</td>
+                <td rowspan="2">8978788978</td>
+            </tr>
+            <tr>
+                <td>Amit Gohel</td>
+                <td>a@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Roxon Corp</td>
+                <td rowspan="2">h@gmail.com</td>
+                <td>8978788978</td>
+            </tr>
+            <tr>
+                <td>Herry Gohel</td>
+                <td rowspan="2">9876543210</td>
+            </tr>
+            <tr>
+                <td>Mayur Gohel</td>
+                <td>m@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="table-class">
+        <table>
+            <caption style="margin: 10px;">Table 4 - <mark>"rowspan"</mark> Example</caption>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Company</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <td>9878789878</td>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td colspan="2" style="text-align:center">Epistic Technology</td>
+                <td>9878789878</td>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <td>9878789878</td>
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td colspan="3" style="text-align:center">Epistic Technology</td>
+                <!-- <td>9878789878</td> -->
+            </tr>
+            <tr>
+                <td>Hitesh gohel</td>
+                <td>Epistic Technology</td>
+                <td>Phoenix Technology</td>
+                <td>9878789878</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
