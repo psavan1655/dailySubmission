@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="b_fbox.css">
+
+    <!-- <title>Document</title> -->
+    <!-- <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #myImg:hover {opacity: 0.7;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption {  
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)} 
+      to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h2>Automatic Slideshow</h2>
+    <p>Change image every 2 seconds:</p>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="bOvf94dPRxWu0u3QsPjF_tree.jpg" style="width:70%; height: 300px;">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="sunset-coast-lake-nature-landscape-260nw-1960131820.jpg" style="width:70%; height: 300px;">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="bOvf94dPRxWu0u3QsPjF_tree.jpg" style="width:70% ; height: 300px;">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script> -->
+
+<body>
+
+    <!-- <div class="carousel-item">
+        <img src="sunset-coast-lake-nature-landscape-260nw-1960131820.jpg" alt="...">
+        <img src="sunset-coast-lake-nature-landscape-260nw-1960131820.jpg" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <h5>...</h5>
+          <p>...</p>
+        </div>
+      </div> -->
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="flex-container ">
+
+                <div class="flex-item flex-item-4">container-4</div>
+
+                <div class="flex-item flex-item-5">container-5 </div>
+            </div>
+
+            <!-- <div class="flex-container"> -->
+            <div class="flex-container">
+                <div class="flex-container">
+
+                    <div class="roww">
+                        <div class="flex-item flex-item-2">this</div>
+
+
+
+                        <div class="flex-item flex-item-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veniam quisquam cum rerum eum recusandae libero laboriosam molestiae vitae at tempore
+                            excepturi eos culpa dolores, quia a, iusto ducimus! Corporis, repellendus.</div>
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="flex-container"> -->
+                    <div class="flex-item flex-item-1">hello</div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="flex-container">
+
+            <div class="flex-container">
+
+                <div class="flex-item flex-item-6">container-6 </div>
+
+            </div>
+
+            <!-- <div class="flex-item"> -->
+
+            <div class="roww">
+
+                <div class="flex-item flex-item-7">container-7 </div>
+                <div class="flex-item flex-item-8">container-8</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
