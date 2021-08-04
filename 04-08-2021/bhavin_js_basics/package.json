@@ -1,0 +1,17 @@
+{
+  "name": "bhavin_js_basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bhavin.js",
+  "dependencies": {
+    "create-react-app": "^4.0.3",
+    "logdown": "^3.3.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
