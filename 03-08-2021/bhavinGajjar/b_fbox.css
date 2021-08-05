@@ -4,6 +4,7 @@
     height: auto;
     flex-wrap: wrap;
 <<<<<<< HEAD:03-08-2021/bhavinGajjar/b_fbox.css
+<<<<<<< HEAD:03-08-2021/bhavinGajjar/b_fbox.css
 <<<<<<< HEAD:03-08-2021/flexbox/b_fbox.css
     flex: 3px;
     /* background-color: rgb(241, 225, 228); */
@@ -13,6 +14,9 @@
 =======
     flex: 1 1 3px;
 >>>>>>> 0bf4659ac57825c489988585b0fc7a218cd9ff56:03-08-2021/flexbox/b_fbox.css
+=======
+    flex: 1 1 3px;
+>>>>>>> 8ba52d7df559057dd383a8e88c6e9d308dee1000:03-08-2021/flexbox/b_fbox.css
     height: auto;
     /* flex: 2px;       */
 
@@ -27,6 +31,7 @@
     justify-content: right;
     flex-wrap: wrap;
 <<<<<<< HEAD:03-08-2021/bhavinGajjar/b_fbox.css
+<<<<<<< HEAD:03-08-2021/bhavinGajjar/b_fbox.css
 <<<<<<< HEAD:03-08-2021/flexbox/b_fbox.css
     flex: 3px;      
     /* flex-grow: 1; */
@@ -36,6 +41,9 @@
 =======
     flex: 1 2 3px;      
 >>>>>>> 0bf4659ac57825c489988585b0fc7a218cd9ff56:03-08-2021/flexbox/b_fbox.css
+=======
+    flex: 1 2 3px;      
+>>>>>>> 8ba52d7df559057dd383a8e88c6e9d308dee1000:03-08-2021/flexbox/b_fbox.css
     
 
 }
@@ -109,4 +117,19 @@
 
 
   
+<<<<<<< HEAD:03-08-2021/bhavinGajjar/b_fbox.css
   
+=======
+/* img{
+    height: 20% !important;
+    width:  1000px ;
+    border: 1px solid red;
+} */
+ /* img {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    min-height: 130px;
+   min-width: 175%;
+} */
+>>>>>>> 8ba52d7df559057dd383a8e88c6e9d308dee1000:03-08-2021/flexbox/b_fbox.css
