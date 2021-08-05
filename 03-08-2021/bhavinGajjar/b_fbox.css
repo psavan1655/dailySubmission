@@ -3,12 +3,16 @@
     width: auto;
     height: auto;
     flex-wrap: wrap;
+<<<<<<< HEAD:03-08-2021/bhavinGajjar/b_fbox.css
 <<<<<<< HEAD:03-08-2021/flexbox/b_fbox.css
     flex: 3px;
     /* background-color: rgb(241, 225, 228); */
 =======
     flex: 1 1 3px;
 >>>>>>> 0bf4659ac57825c489988585b0fc7a218cd9ff56:03-08-2021/bhavinGajjar/b_fbox.css
+=======
+    flex: 1 1 3px;
+>>>>>>> 0bf4659ac57825c489988585b0fc7a218cd9ff56:03-08-2021/flexbox/b_fbox.css
     height: auto;
     /* flex: 2px;       */
 
@@ -22,12 +26,16 @@
     flex-direction: row;
     justify-content: right;
     flex-wrap: wrap;
+<<<<<<< HEAD:03-08-2021/bhavinGajjar/b_fbox.css
 <<<<<<< HEAD:03-08-2021/flexbox/b_fbox.css
     flex: 3px;      
     /* flex-grow: 1; */
 =======
     flex: 1 2 3px;      
 >>>>>>> 0bf4659ac57825c489988585b0fc7a218cd9ff56:03-08-2021/bhavinGajjar/b_fbox.css
+=======
+    flex: 1 2 3px;      
+>>>>>>> 0bf4659ac57825c489988585b0fc7a218cd9ff56:03-08-2021/flexbox/b_fbox.css
     
 
 }
