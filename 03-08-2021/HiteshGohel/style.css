@@ -1,4 +1,4 @@
-body {
+html {
   margin: 0;
   padding: 0;
 }
@@ -23,31 +23,46 @@ body {
   border: 1px solid black;
 }
 
-.flex-item-row {
-  min-height: 100px;
-}
-
-.flex-item-col {
-  min-width: 100px;
-  min-height: 100px;
-}
-
-.col-1 {
-  min-height: 50px;
-}
-
 .right-cols {
-  max-width: 250px;
-  height: 100vh;
-  max-height: 260px;
+  background-color: lightyellow;
 }
 
 .right-col-1 {
-  height: 50vh;
-  max-height: 150px;
+  height: 178px;
+  width: 96%;
+  min-height: 75px;
+  background-color: lavender;
 }
 
 .right-col-2 {
+  min-height: 125px;
+  width: 96%;
+  background-color: lavender;
+}
+
+.box1and2 {
+  min-height: 100px;
+  background-color: lightgray;
+  min-height: 100px;
+  background-color: lightgray;
+}
+
+.box3 {
+  min-width: 100px;
+  min-height: 60px;
+  background-color: lightblue;
+}
+
+.box4 {
+  min-width: 100px;
+  min-height: 140px;
+  background-color: lightblue;
+}
+
+.box5 {
+  min-width: 150px;
+  margin: 1px 1px 1px 10px;
+  background: lavenderblush;
 }
 
 #slider {
@@ -56,21 +71,63 @@ body {
 
 #slider figure {
   position: relative;
-  width: 300%;
+  width: 500%;
   margin: 2px;
   left: 0;
-  animation: 10s slider infinite;
+  animation: 15s slider infinite;
 }
 
-/* #slider figure img {
-  width: 33%;
+#slider figure img {
+  width: 20%;
   float: left;
-} */
+}
 
-/* @media only screen and (max-width: 480px) {
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  55% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .flex-container-row {
     display: flex;
-    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .flex-container-row {
+    display: block;
   }
 
   .flex-container-col {
@@ -78,4 +135,32 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
   }
-} */
+
+  .flex-items {
+    width: 98%;
+    margin: 2px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .right-div-class {
+    display: block;
+  }
+
+  .box5 {
+    margin: 0 !important;
+  }
+
+  #textarea {
+    width: 98%;
+  }
+
+  .right-container {
+    flex-wrap: wrap;
+  }
+
+  .box5,
+  .box6 {
+    height: 100px;
+  }
+}
