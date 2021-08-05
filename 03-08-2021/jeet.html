@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,101 +9,98 @@
     <link rel="stylesheet" href="jeet.css">
 
 </head>
+
 <body>
 
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src=".\593794.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
+            <div class="numbertext">1 / 3</div>
+            <img src=".\593794.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
         </div>
-        
+
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src=".\images (1).png" style="width:100%">
-          <div class="text">Caption Two</div>
+            <div class="numbertext">2 / 3</div>
+            <img src=".\images (1).png" style="width:100%">
+            <div class="text">Caption Two</div>
         </div>
-        
+
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src=".\new-aesthetic-wallpapers-1920x1080-windows-10.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+            <div class="numbertext">3 / 3</div>
+            <img src=".\new-aesthetic-wallpapers-1920x1080-windows-10.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
         </div>
-        
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <script>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
         var slideIndex = 1;
         showSlides(slideIndex);
-        
+
         function plusSlides(n) {
-          showSlides(slideIndex += n);
+            showSlides(slideIndex += n);
         }
-        
+
         function currentSlide(n) {
-          showSlides(slideIndex = n);
+            showSlides(slideIndex = n);
         }
-        
+
         function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
-        </script>
+    </script>
 
     <div class="flexbox-container">
         <div class="Ghanasvi">
             <div class="flex">
-                <div class="flex1">
-                    <div class="flexbox-item flexbox-item-1"></div>
-                    <div class="flexbox-item flexbox-item-2"></div>
-                </div>
-                <div class="flex4">
-                    <div class="flex2">
-                        <div class="flexbox-item flexbox-item-3"></div>
-                        <div class="flexbox-item flexbox-item-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi fuga blanditiis expedita obcaecati minima veritatis cum ipsam error perferendis at minus, ducimus aperiam mollitia vel! Id dicta distinctio, voluptates reiciendis provident quos molestiae sint quas consectetur dolores minima aliquid, consequatur accusantium omnis, eveniet necessitatibus possimus enim qui. Nisi, vero architecto.</div>
-                    </div>
-                    <div class="flex3">
-                        <div class="flexbox-item flexbox-item-5"></div>
-                    </div>
-                </div>
+                <div class="flexbox-item flexbox-item-1">boxxxxxxx</div>
+                <div class="flexbox-item flexbox-item-2">boxxxxxxx</div>
             </div>
-            <div class="ghanu">
-                <div class="ghanu1">
-                    <div class="flexbox-item flexbox-item-6"></div>
+            <div class="flex2">
+                <div class="ghanu4">
+                    <div class="flexbox-item flexbox-item-3">boxxxxx</div>
+                    <div class="flexbox-item flexbox-item-4">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nisi fuga blanditiis expedita obcaecati minima veritatis cum ipsam error perferendis
+                        at minus, ducimus aperiam mollitia vel! Id dicta distinctio, voluptates reiciendis provident
+                        quos molestiae sint quas consectetur dolores minima aliquid, consequatur accusantium omnis,
+                        eveniet necessitatibus possimus enim qui. Nisi, vero architecto.</div>
                 </div>
-                <div>
-                    <div class="flexbox-item flexbox-item-7"></div>
-                    <div class="flexbox-item flexbox-item-8"></div>
-                </div>
+                <div class="flexbox-item flexbox-item-5">boxxxxx</div>
+            </div>
+        </div>
+        <div class="ghanu">
+            <div class="ghanu1">
+                <div class="flexbox-item flexbox-item-6">boxxxxxxxx</div>
+            </div>
+            <div class="ghanu4">
+                <div class="flexbox-item flexbox-item-7">boxxxxxxxx</div>
+                <div class="flexbox-item flexbox-item-8">boxxxxxxxxx</div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
-
-
-
-
-

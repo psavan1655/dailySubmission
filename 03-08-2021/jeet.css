@@ -1,95 +1,97 @@
 .flexbox-container{
-    
+    display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    flex-shrink: initial;
-}
-
+    /* flex-shrink: initial; */
+    flex: 2px;
+  }
 .flexbox-item{
     border: 2px solid black;
     margin: 10px;
     background-color: blanchedalmond;
-    
+    flex: 1 2 3px; 
 }
 .Ghanasvi{
-    display: flex;
-    flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+  margin: 10px;
+  flex: 1 2 3px; 
+  height: auto;
+  width: auto;
 }
-
-
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-shrink: initial;
+  flex: 1 1 3px;
+  height: auto;
+  width: auto;  
+}
 .flexbox-item-1{
-    min-height: 200px;
-    width: 200px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .flexbox-item-2{
     min-height: 200px;
-    width: 200px;
+    height: auto;
+    flex-wrap: wrap;
 }
 .flexbox-item-3{
     min-height:130px;
-    width: 130px;
-    
 }
 .flexbox-item-4{
     min-height:130px;
-    width: 130px;
-    height: 100px;
+    height: 135px;
     overflow-y: scroll;
     overflow-x: hidden;
-
 }
  .flexbox-item-5{
     min-height:275px;
-    width: 271px;
-    
 }
 .flexbox-item-6{
-    min-height:498px;
-    width: 200px;
-    
-    
+    min-height:495px;
+    margin-top: 20px;  
 }
 .flexbox-item-7{
     min-height:333px;
-    width: 200px;
-    
+    margin-top: 20px;
 }
 .flexbox-item-8{
-    min-height:150px;
-    width: 200px;
-    
+    min-height:150px;    
 }
-/* .flex{
-    flex-wrap: wrap;
-} */
-.flex1{
-    display: flex;
-    flex-wrap: wrap;
+.ghanu4{
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 3 3px;
 }
-.flex4{
-    display: flex;
-    flex-wrap: wrap;
-    
+.flex2{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-shrink: initial;
+  flex: 1 1 3px;
+  height: auto;
+ width: auto;   
 }
-/* .flex2{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-} */
-
-.flex3{
-    
-    flex-wrap: wrap;
-}
-
-
 .ghanu{
-    display: flex;
-   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-shrink: initial;
+  flex: 1 1 3px;
+  height: auto;
+ width: auto;   
 }
-/* .ghanu1{
-    flex-wrap: wrap;
-} */
+.ghanu1{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-shrink: initial;
+  flex: 1 1 3px;
+  height: auto;
+ width: auto;   
+}
 
 
 
@@ -102,8 +104,9 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: relative;
+  position:relative;
   margin: auto;
+  width: 500px;
 }
 
 /* Next & previous buttons */
@@ -154,16 +157,7 @@ img {vertical-align: middle;}
 }
 
 /* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+/* wi */
 
 .active, .dot:hover {
   background-color: #717171;
