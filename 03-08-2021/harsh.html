@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Box</title>
-    <link rel="stylesheet" href="harsh.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <link rel="stylesheet" href="harsh.css">
 </head>
 
 <body>
-    <!-- <div class="slideshow-container">
+  <!-- <div class="slideshow-container">
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
@@ -71,89 +71,92 @@
         }
         </script> -->
 
-        <div class="slideshow-container">
+  <div class="slideshow-container">
 
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="./test1.jpeg" style="width:100%">
-              <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="./test2.jpeg" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="./test3.jpeg" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            
-            <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 2000); // Change image every 2 seconds
-            }
-            </script>
-
-
-
-    <div class="flexbox-contaniner">
-        <div class="flex3">
-            <div class="">
-                <div class="flex">
-                    <div class="flexbox-item flexbox-item-1">box1</div>
-                    <div class="flexbox-item flexbox-item-2">box2</div>
-                </div>
-                <div class="flex1">
-                    <div class="flex2">
-                        <div class="flexbox-item flexbox-item-3">box3</div>
-                        <div class="flexbox-item flexbox-item-4">Lorem5orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/> popularised in the 1960s with the release of Letraset sheets<br/> containing Lorem Ipsum passages, and more recently <br/> desktop publishing software like<br/> Aldus PageMaker including versions of Lorem Ipsum</div>
-                    </div>
-                    <div class="flex5">
-                        <div class="flexbox-item flexbox-item-5">box5</div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex4">
-                <div>
-                    <div class="flexbox-item flexbox-item-6">box6</div>
-                </div>
-                <div>
-                    <div class="flexbox-item flexbox-item-7">box7</div>
-                    <div class="flexbox-item flexbox-item-8">box8</div>
-                </div>
-            </div>
-        </div>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./test1.jpeg" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./test2.jpeg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./test3.jpeg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+
+
+
+  <div class="flexbox-contaniner">
+    <div class="flex">
+      <div class="flex3">
+        <div class="flexbox-item flexbox-item-1">box1</div>
+        <div class="flexbox-item flexbox-item-2">box2</div>
+      </div>
+      <div class="flex1">
+        <div class="flex2">
+          <div class="flexbox-item flexbox-item-3">box3</div>
+          <div class="flexbox-item flexbox-item-4">Lorem5orem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+          </div>
+        </div>
+        <!-- <div class="flex5"> -->
+        <div class="flexbox-item flexbox-item-5">box5</div>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="flex4">
+      <div class="flex7">
+        <div class="flexbox-item flexbox-item-6">box6</div>
+      </div>
+      <div class=flex6>
+        <div class="flexbox-item flexbox-item-7">box7</div>
+        <div class="flexbox-item flexbox-item-8">box8</div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
-
-

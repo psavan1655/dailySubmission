@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DataTypes</title>
+  </head>
+  <script>
+    const firstInteger = 4;
+    const firstDecimal = 4.0;
+    const firstString = "HackerRank";
+
+    var IntAddition;
+    var FloatAddition;
+    var StringConcatenation;
+
+    function dataType(secondInteger, secondDecimal, secondString) {
+      IntAddition = firstInteger + parseInt(secondInteger);
+      FloatAddition = firstDecimal + parseFloat(secondDecimal);
+      StringConcatenation = firstString + secondString;
+      return `${IntAddition};\n${FloatAddition};\n${StringConcatenation}`;
+    }
+
+    console.log("-------------------------------------------------------");
+    console.log(
+      dataType(12, 4.32, "is the best place to learn and practice coding!")
+    );
+    console.log("-------------------------------------------------------");
+
+    function myFunction() {
+      document.getElementById("content").style.display = "block";
+      document.getElementById("Integers").innerHTML = IntAddition;
+      document.getElementById("Decimals").innerHTML = FloatAddition;
+      document.getElementById("Strings").innerHTML = StringConcatenation;
+    }
+  </script>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+      "
+    >
+      <marquee onclick="myFunction();"
+        ><h1>Click Here To Get Results</h1></marquee
+      >
+      <div
+        id="content"
+        style="
+          background-color: black;
+          color: white;
+          padding: 10px;
+          display: none;
+        "
+      >
+        Addition of Integers : <span id="Integers"></span><br />
+        Addition of Decimals : <span id="Decimals"></span><br />
+        Concatenation of Strings : <span id="Strings"></span>
+      </div>
+    </div>
+  </body>
+</html>
