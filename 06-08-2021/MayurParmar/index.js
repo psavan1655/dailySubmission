@@ -111,32 +111,30 @@
 // console.log(name.substr(1, -3));
 // console.log(name.substr(-7));
 
-// String replace method
+// // String replace method
 // const name = "my name is mayur parmar. mayur I am from gandhinagar ";
 // console.log(name.replace("mayur", "MAYUR"));
 // console.log(name.replace("MAYUR", "mayur"));
 // console.log(name.replaceAll("mayur", "MAYUR"));
 
-// String extracting string characters
+// let info = {
+//   name: "Hitesh Gohel",
+//   age: 21,
+//   address: { city: "Ahemedabad", state: "Gujrat", country: "India" },
+// };
+// console.log("User Data :", info);
 
-let info = {
-  name: "Hitesh Gohel",
-  age: 21,
-  address: { city: "Ahemedabad", state: "Gujrat", country: "India" },
-};
-console.log("User Data :", info);
+// let copyInfo = info;
+// console.log("CopyInfo Object Data :", copyInfo);
 
-let copyInfo = info;
-console.log("CopyInfo Object Data :", copyInfo);
+// let onlyAddress = info.address;
+// console.log("User Address :", onlyAddress);
 
-let onlyAddress = info.address;
-console.log("User Address :", onlyAddress);
+// onlyAddress.city = "Mumbai";
+// console.log("New User Address :", onlyAddress);
 
-onlyAddress.city = "Mumbai";
-console.log("New User Address :", onlyAddress);
-
-onlyAddress = { ...onlyAddress, state: "Maharashtra", country: "India" };
-console.log("Updated Address : ", onlyAddress);
+// onlyAddress = { ...onlyAddress, state: "Maharashtra", country: "India" };
+// console.log("Updated Address : ", onlyAddress);
 
 // function
 // function add(a, b) {
