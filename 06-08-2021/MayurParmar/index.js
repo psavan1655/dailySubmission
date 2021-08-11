@@ -78,11 +78,97 @@
 // console.log(name);
 
 // String.protorype.indexOf(searchValue ,[fromIndex])
-let name = "my name is Mayur Parmar";
-console.log(name.indexOf("r"));
-console.log(name.lastIndexOf("r"));
-console.log(name.indexOf("Mayur"));
-console.log(name.indexOf("a"));
-console.log(name.indexOf("a", 5));
-console.log(name.lastIndexOf("a"));
-console.log(name.lastIndexOf("a", 20));
+// let name = "my name is Mayur Parmar";
+// console.log(name.indexOf("r"));
+// console.log(name.lastIndexOf("r"));
+// console.log(name.indexOf("Mayur"));
+// console.log(name.indexOf("a"));
+// console.log(name.indexOf("a", 5));
+// console.log(name.lastIndexOf("a"));
+// console.log(name.lastIndexOf("a", 20));
+
+// serach in string
+// const name = "my name is Mayur Parmar";
+// console.log(name.search("is"));
+
+// extracting string parts
+// // 1. slice
+// const name = "my name is Parmar Mayur K";
+// console.log(name.slice(1, 3));
+// console.log(name.slice(1, -1));
+// console.log(name.slice(1));
+// // task 1:
+// const add =
+//   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laudantium aspernatur corporis totam mayur corrupti consequatur, modi blanditiis, repudiandae voluptatum odio reiciendis, pariatur libero aliquam autem quisquam ab nisi. Aut, quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis accusamus nobis tenetur, error cum culpa sunt. Corporis ducimus tempora, sit, non iure facilis maiores rerum atque ratione consectetur sequi eius earum quis, fuga fugit nesciunt iste? Provident assumenda illo debitis.";
+// console.log(add.slice(0, 288));
+// 2.substring
+// const name = "my name is Parmar Mayur K";
+// console.log(name.substring(1, 3));
+// console.log(name.substring(5, -1)); // not gives negative value
+// // 3. substr
+// const name = "my name is Parmar Mayur K";
+// console.log(name.substr(1, 3));
+// console.log(name.substr(1, -3));
+// console.log(name.substr(-7));
+
+// // String replace method
+// const name = "my name is mayur parmar. mayur I am from gandhinagar ";
+// console.log(name.replace("mayur", "MAYUR"));
+// console.log(name.replace("MAYUR", "mayur"));
+// console.log(name.replaceAll("mayur", "MAYUR"));
+
+// let info = {
+//   name: "Hitesh Gohel",
+//   age: 21,
+//   address: { city: "Ahemedabad", state: "Gujrat", country: "India" },
+// };
+// console.log("User Data :", info);
+
+// let copyInfo = info;
+// console.log("CopyInfo Object Data :", copyInfo);
+
+// let onlyAddress = info.address;
+// console.log("User Address :", onlyAddress);
+
+// onlyAddress.city = "Mumbai";
+// console.log("New User Address :", onlyAddress);
+
+// onlyAddress = { ...onlyAddress, state: "Maharashtra", country: "India" };
+// console.log("Updated Address : ", onlyAddress);
+
+// function
+// function add(a, b) {
+//   console.log("====================================");
+//   console.log(a);
+//   console.log("====================================");
+// }
+// let ab;
+// add((ab = 20), 10);
+
+// let a = 10;
+// a++; //11
+// a++; //12
+// a++; //13
+// let c = ++a; //14
+// let b = a++; // 15
+// console.log(a); //15
+// console.log(b); //15
+// console.log(c); //14
+
+// let mayur = 19999;
+// mayur++; // 20,000
+// ++mayur; //20,001
+// mayur++; //20,002
+// mayur++; //20,003
+// mayur++; //20,004
+// mayur++; //20,005
+// mayur++; //20,006
+// mayur++; //20,007
+// mayur++; //20,008
+// mayur++; //20,009
+// mayur++; //20,010
+// let mk = ++mayur; //20,011
+// let parmar = mayur++; // 20,011
+// console.log(mk); // 20,011h //20011m/20000s //20009
+// console.log(parmar); //20,011h //20011m/20000s //20010
+// console.log(mayur); //20,011h //20012m/19999s
