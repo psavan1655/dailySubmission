@@ -1,6 +1,6 @@
 // Sort A Float Array In Ascending And Descending Order Using
 
-let arr = [23, 24, 2, 5, 3234, 32432, 343];
+let arr = [23.434, 23.01, 2, 5, 3234, 32432, 343];
 console.log("Ascending : "); //Printing message
 
 for (let i = 0; i < arr.length; i++) {
