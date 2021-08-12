@@ -1,0 +1,410 @@
+======================================================================================================================
+Yash -
+Given an array of N integers arr[] where each element represents the max number of steps that can be made forward from that element. Find the minimum number of jumps to reach the end of the array (starting from the first element). If an element is 0, then you cannot move through that element.
+Note: Return -1 if you can't reach the end of the array.
+
+
+Example 1:
+
+Input:
+N = 11 
+arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9} 
+Output: 3 
+Explanation: 
+First jump from 1st element to 2nd 
+element with value 3. Now, from here 
+we jump to 5th element with value 9, 
+and from here we will jump to last. 
+Example 2:
+
+Input :
+N = 6
+arr = {1, 4, 3, 2, 6, 7}
+Output: 2 
+Explanation: 
+First we jump from the 1st to 2nd element 
+and then jump to the last element.
+
+Your task:
+You don't need to read input or print anything. Your task is to complete function minJumps() which takes the array arr and it's size N as input parameters and returns the minimum number of jumps. If not possible returns -1.
+
+
+Expected Time Complexity: O(N)
+Expected Space Complexity: O(1)
+
+
+Constraints:
+1 ≤ N ≤ 107
+0 ≤ arri ≤ 107
+
+======================================================================================================================
+Mayur Parmar -
+Given two sorted arrays arr1[] of size N and arr2[] of size M. Each array is sorted in non-decreasing order. Merge the two arrays into one sorted array in non-decreasing order without using any extra space.
+
+
+Example 1:
+
+Input:
+N = 4, M = 5
+arr1[] = {1, 3, 5, 7}
+arr2[] = {0, 2, 6, 8, 9}
+Output: 0 1 2 3 5 6 7 8 9
+Explanation: Since you can't use any 
+extra space, modify the given arrays
+to form 
+arr1[] = {0, 1, 2, 3}
+arr2[] = {5, 6, 7, 8, 9}
+
+Example 2:
+
+Input:
+N = 2, M = 3
+arr1[] = {10, 12}
+arr2[] = {5, 18, 20}
+Output: 5 10 12 18 20
+Explanation: Since you can't use any
+extra space, modify the given arrays
+to form 
+arr1[] = {5, 10}
+arr2[] = {12, 18, 20}
+ 
+
+Your Task:
+You don't need to read input or print anything. Complete the function merge() which takes the two arrays arr1[], arr2[] and their sizes n and m, as input parameters. The function does not return anything. Use the given arrays to sort and merge arr1[] and arr2[] in-place. 
+Note: The generated output will print all the elements of arr1[] followed by all the elements of arr2[].
+
+
+Expected Time Complexity: O((n+m)*log(n+m))
+Expected Auxiliary Space: O(1)
+
+
+Constraints:
+1 <= N, M <= 5*104
+0 <= arr1i, arr2i <= 106
+
+======================================================================================================================
+Bhavin -
+Given an array of positive and negative numbers. Find if there is a subarray (of size at-least one) with 0 sum.
+
+Example 1:
+
+Input:
+5
+4 2 -3 1 6
+
+Output: 
+Yes
+
+Explanation: 
+2, -3, 1 is the subarray 
+with sum 0.
+Example 2:
+
+Input:
+5
+4 2 0 1 6
+
+Output: 
+Yes
+
+Explanation: 
+0 is one of the element 
+in the array so there exist a 
+subarray with sum 0.
+Your Task:
+You only need to complete the function subArrayExists() that takes array and n as parameters and returns true or false depending upon whether there is a subarray present with 0-sum or not. Printing will be taken care by the drivers code.
+
+Expected Time Complexity: O(n).
+Expected Auxiliary Space: O(n).
+
+Constraints:
+1 <= n <= 104
+-105 <= a[i] <= 105
+
+======================================================================================================================
+Hitesh -
+Given a binary string str of length N, the task is to find the maximum count of consecutive substrings str can be divided into such that all the substrings are balanced i.e. they have equal number of 0s and 1s. If it is not possible to split str satisfying the conditions then print -1.
+Example: 
+ 
+
+Input: str = “0100110101” 
+Output: 4 
+The required substrings are “01”, “0011”, “01” and “01”.
+Input: str = “0111100010” 
+Output: 3 
+
+Input: str = “0000000000” 
+
+Output: -1
+
+======================================================================================================================
+Snehal -
+Given a 2-Dimensional character array and a string, we need to find the given string in 2-dimensional character array such that individual characters can be present left to right, right to left, top to down or down to top.
+
+Examples: 
+
+Input : a ={
+            {D,D,D,G,D,D},
+            {B,B,D,E,B,S},
+            {B,S,K,E,B,K},
+            {D,D,D,D,D,E},
+            {D,D,D,D,D,E},
+            {D,D,D,D,D,G}
+           }
+        str= "GEEKS"
+Output :2
+
+Input : a = {
+            {B,B,M,B,B,B},
+            {C,B,A,B,B,B},
+            {I,B,G,B,B,B},
+            {G,B,I,B,B,B},
+            {A,B,C,B,B,B},
+            {M,C,I,G,A,M}
+            }
+        str= "MAGIC"
+
+Output :4
+
+======================================================================================================================
+Harshil -
+Stickler the thief wants to loot money from a society having n houses in a single line. He is a weird person and follows a certain rule when looting the houses. According to the rule, he will never loot two consecutive houses. At the same time, he wants to maximize the amount he loots. The thief knows which house has what amount of money but is unable to come up with an optimal looting strategy. He asks for your help to find the maximum money he can get if he strictly follows the rule. Each house has a[i] amount of money present in it.
+
+Example 1:
+
+Input:
+n = 6
+a[] = {5,5,10,100,10,5}
+Output: 110
+Explanation: 5+100+5=110
+Example 2:
+
+Input:
+n = 3
+a[] = {1,2,3}
+Output: 4
+Explanation: 1+3=4
+Your Task:
+Complete the function FindMaxSum() which takes an array arr[] and n as input which returns the maximum money he can get following the rules
+
+Expected Time Complexity: O(N).
+Expected Space Complexity: O(N).
+
+Constraints:
+1 ≤ n ≤ 104
+1 ≤ a[i] ≤ 104
+
+======================================================================================================================
+Kevin -
+Given N jobs where every job is represented by following three elements of it.
+
+1- Start Time
+2- Finish Time
+3- Profit or Value Associated
+Find the maximum profit subset of jobs such that no two jobs in the subset overlap.
+
+Example:
+
+Input: Number of Jobs n = 4
+       Job Details {Start Time, Finish Time, Profit}
+       Job 1:  {1, 2, 50} 
+       Job 2:  {3, 5, 20}
+       Job 3:  {6, 19, 100}
+       Job 4:  {2, 100, 200}
+Output: The maximum profit is 250.
+We can get the maximum profit by scheduling jobs 1 and 4.
+Note that there is longer schedules possible Jobs 1, 2 and 3 
+but the profit with this schedule is 20+50+100 which is less than 250.  
+
+======================================================================================================================
+Harsh -
+Given a sequence of matrices, find the most efficient way to multiply these matrices together. The problem is not actually to perform the multiplications, but merely to decide in which order to perform the multiplications.
+We have many options to multiply a chain of matrices because matrix multiplication is associative. In other words, no matter how we parenthesize the product, the result will be the same. For example, if we had four matrices A, B, C, and D, we would have: 
+
+(ABC)D = (AB)(CD) = A(BCD) = ....
+However, the order in which we parenthesize the product affects the number of simple arithmetic operations needed to compute the product, or the efficiency. For example, suppose A is a 10 × 30 matrix, B is a 30 × 5 matrix, and C is a 5 × 60 matrix. Then,  
+
+(AB)C = (10×30×5) + (10×5×60) = 1500 + 3000 = 4500 operations
+A(BC) = (30×5×60) + (10×30×60) = 9000 + 18000 = 27000 operations.
+Clearly the first parenthesization requires less number of operations.
+Given an array p[] which represents the chain of matrices such that the ith matrix Ai is of dimension p[i-1] x p[i]. We need to write a function MatrixChainOrder() that should return the minimum number of multiplications needed to multiply the chain. 
+
+Input: p[] = {40, 20, 30, 10, 30}   
+Output: 26000  
+There are 4 matrices of dimensions 40x20, 20x30, 30x10 and 10x30.
+Let the input 4 matrices be A, B, C and D.  The minimum number of 
+multiplications are obtained by putting parenthesis in following way
+(A(BC))D --> 20*30*10 + 40*20*10 + 40*10*30
+
+Input: p[] = {10, 20, 30, 40, 30} 
+Output: 30000 
+There are 4 matrices of dimensions 10x20, 20x30, 30x40 and 40x30. 
+Let the input 4 matrices be A, B, C and D.  The minimum number of 
+multiplications are obtained by putting parenthesis in following way
+((AB)C)D --> 10*20*30 + 10*30*40 + 10*40*30
+
+Input: p[] = {10, 20, 30}  
+Output: 6000  
+There are only two matrices of dimensions 10x20 and 20x30. So there 
+is only one way to multiply the matrices, cost of which is 10*20*30
+
+======================================================================================================================
+Vedang - 
+Given 3 strings A, B and C, the task is to find the longest common sub-sequence in all three given sequences.
+
+Example 1:
+
+Input:
+A = "geeks", B = "geeksfor", 
+C = "geeksforgeeks"
+Output: 5
+Explanation: "geeks"is the longest common
+subsequence with length 5.
+â€‹Example 2:
+
+Input: 
+A = "abcd", B = "efgh", C = "ijkl"
+Output: 0
+Explanation: There's no common subsequence
+in all the strings.
+
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function LCSof3() which takes the strings A, B, C and their lengths n1, n2, n3 as input and returns the length of the longest common subsequence in all the 3 strings.
+
+
+Expected Time Complexity: O(n1*n2*n3).
+Expected Auxiliary Space: O(n1*n2*n3).
+
+
+Constraints:
+1<=n1, n2, n3<=100
+
+======================================================================================================================
+Jeet -
+Given an array of positive and negative numbers. Find if there is a subarray (of size at-least one) with 0 sum.
+
+Example 1:
+
+Input:
+5
+4 2 -3 1 6
+
+Output: 
+Yes
+
+Explanation: 
+2, -3, 1 is the subarray 
+with sum 0.
+Example 2:
+
+Input:
+5
+4 2 0 1 6
+
+Output: 
+Yes
+
+Explanation: 
+0 is one of the element 
+in the array so there exist a 
+subarray with sum 0.
+Your Task:
+You only need to complete the function subArrayExists() that takes array and n as parameters and returns true or false depending upon whether there is a subarray present with 0-sum or not. Printing will be taken care by the drivers code.
+
+Expected Time Complexity: O(n).
+Expected Auxiliary Space: O(n).
+
+Constraints:
+1 <= n <= 104
+-105 <= a[i] <= 105
+
+======================================================================================================================
+Hiral -
+Given an array of integers (A[])  and a number x, find the smallest subarray with sum greater than the given value.
+
+Note: The answer always exists. It is guaranteed that x doesn't exceed the summation of a[i] (from 1 to N).
+
+Example 1:
+
+Input:
+A[] = {1, 4, 45, 6, 0, 19}
+x  =  51
+Output: 3
+Explanation:
+Minimum length subarray is 
+{4, 45, 6}
+
+Example 2:
+Input:
+A[] = {1, 10, 5, 2, 7}
+   x  = 9
+Output: 1
+Explanation:
+Minimum length subarray is {10}
+ 
+
+Your Task:  
+You don't need to read input or print anything. Your task is to complete the function sb() which takes the array A[], its size N and an integer X as inputs and returns the required ouput.
+
+
+Expected Time Complexity: O(N)
+Expected Auxiliary Space: O(1)
+
+Constraints:
+1 ≤ N, x ≤ 105
+1 ≤ A[] ≤ 104
+
+======================================================================================================================
+Shilpa - 
+Given a binary string str of length N, the task is to find the maximum count of consecutive substrings str can be divided into such that all the substrings are balanced i.e. they have equal number of 0s and 1s. If it is not possible to split str satisfying the conditions then print -1.
+Example: 
+ 
+
+Input: str = “0100110101” 
+Output: 4 
+The required substrings are “01”, “0011”, “01” and “01”.
+Input: str = “0111100010” 
+Output: 3 
+
+Input: str = “0000000000” 
+
+Output: -1
+
+======================================================================================================================
+Trupti - 
+Given an array of N integers arr[] where each element represents the max number of steps that can be made forward from that element. Find the minimum number of jumps to reach the end of the array (starting from the first element). If an element is 0, then you cannot move through that element.
+Note: Return -1 if you can't reach the end of the array.
+
+
+Example 1:
+
+Input:
+N = 11 
+arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9} 
+Output: 3 
+Explanation: 
+First jump from 1st element to 2nd 
+element with value 3. Now, from here 
+we jump to 5th element with value 9, 
+and from here we will jump to last. 
+Example 2:
+
+Input :
+N = 6
+arr = {1, 4, 3, 2, 6, 7}
+Output: 2 
+Explanation: 
+First we jump from the 1st to 2nd element 
+and then jump to the last element.
+
+Your task:
+You don't need to read input or print anything. Your task is to complete function minJumps() which takes the array arr and it's size N as input parameters and returns the minimum number of jumps. If not possible returns -1.
+
+
+Expected Time Complexity: O(N)
+Expected Space Complexity: O(1)
+
+
+Constraints:
+1 ≤ N ≤ 107
+0 ≤ arri ≤ 107
