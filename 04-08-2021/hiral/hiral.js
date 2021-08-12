@@ -97,3 +97,135 @@ for (ia = 0; ia < 3; ia++) {
 
 console.log(ia)
 
+let ag = 2 + 2;
+
+switch (ag) {
+  case 3:
+   console.log( 'Too small' );
+    break;
+  case 4:
+    console.log( 'Exactly!' );
+    break;
+  case 5:
+    console.log( 'Too big' );
+    break;
+  default:
+    console.log( "I don't know such values" );
+}
+
+
+console.log(v);
+var  v="hiral1";
+
+// console.log(poi);
+// let poi="hiral";
+
+// console.log(po);
+// const po="hiral";
+
+let firstName = "he";
+let lastName = null;
+let nickName = "Supercoder";
+
+
+console.log(firstName ?? lastName ?? nickName ?? "Anonymous"); 
+
+
+let height = null;
+
+console.log(height || 100); // 0 hoy to 100 ,,,10 hase to 10 aapse,,,,,,,null hoy to 100 
+console.log(height ?? 100); // 0 hoy to 0   ,,,10 hot to 10 aape  ,,,,,,,null hoy to 100
+console.log(height && 100);// 0 hoy to 0    ,,,
+
+function showMessage1() {
+  console.log( 'Hello everyone!' );
+}
+
+showMessage1();
+
+
+// let userName2 = 'John';
+
+// function showMessage() {
+//   let message = 'Hello, ' + userName2;
+//   console.log(message);
+// }
+
+// showMessage(); 
+// console.log(message);
+// function showMessage() {
+//   let message = "Hello, I'm JavaScript!"; // local variable
+
+//   console.log( message );
+// }
+
+// showMessage();
+
+// console.log( message );
+
+// let userNa = 'kjhgfds';
+
+// function showMessage() {
+//   let m = userNa;
+//   console.log(m);
+// }
+
+// showMessage();
+
+let u = 'John';
+function showMessage()
+
+ {
+ 
+  let message1 ="hello     "  + u; 
+  console.log(message1);
+}
+
+showMessage();
+// console.log(message1);
+// -09876543234567890-0987654321
+let l = "hiral";
+
+function test() {
+  l = "hir"; // (1) changed the outer variable
+
+  let message2 = 'Hello, ' + l;
+console.log(message2);//hello hir
+
+
+
+console.log("ytre");
+}
+console.log( l );//hiral
+console.log("ytre");
+test();
+
+console.log( l );//hir
+function abc(from, text) { 
+ console.log(from + ': ' + text);
+}
+
+abc('Ann', 'Hello!'); 
+abc('Ann', "What's up?");
+
+let double = n => n * 2;
+
+
+console.log( double(3) );
+let user = {
+  name: "John",
+  age: 30
+};
+
+let key ="name";
+console.log( user[key] )
+let az = {};
+let bz = az; 
+
+console.log( az == bz ); 
+console.log( az=== bz );
+
+let pm=0,pq=0;
+pm=++pm;
+pq=++pm;
+console.log(pm,pq);
