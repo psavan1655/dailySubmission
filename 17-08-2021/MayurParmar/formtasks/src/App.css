@@ -54,7 +54,6 @@
   border-right: none;
 }
 
-
 .form-container select {
   border-top: none;
   border-left: none;
@@ -68,4 +67,8 @@
   text-transform: capitalize;
   outline: none;
   padding: 4px;
+}
+
+.table{
+  border: 1px;
 }
