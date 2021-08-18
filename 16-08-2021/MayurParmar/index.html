@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayurParmar</title>
+</head>
+
+<body>
+    <button onclick="alert('Hello i am inline event')">onClick</button>
+    <br>
+    <button onclick="me()">onclick</button>
+    <br>
+    <button id="button">onclick</button>
+    <br>
+    <button id="btn">onclick</button>
+    <h1>JavaScript Timing Events</h1>
+    <p>Want to know my Name ? </p>
+    <p id="myname"></p>
+    <button id="btnTime">Click Here</button>
+    <button id="clearTimeOut">Stop Here</button>
+    <br>
+    <h2>SetInterval TimeOut Method</h2>
+    <p>Javascript SetInterTime</p>
+    <p id="pinterval"></p>
+    <button id="btnInter">Click Here</button>
+    <button id="stopinter">Stop Here</button>
+    <input maxlength="10">
+    <script>
+        // setInterval event start
+        const pinterval = document.querySelector('#pinterval');
+        const btnInter = document.querySelector('#btnInter');
+        const stopinter = document.querySelector('#stopinter');
+        let stopIntervalMethod;
+        let i = 0;
+        const startInterval = () => {
+            stopIntervalMethod = setInterval(() => {
+                pinterval.innerHTML = i++;
+            }, 1000);
+        }
+
+        btnInter.addEventListener('click', startInterval);
+        stopinter.addEventListener('click', () => {
+            clearInterval(stopIntervalMethod)
+        })
+        // setInterval event end
+
+
+        //Timing event start
+        const btntime = document.querySelector('#btnTime');
+        const myName = document.querySelector('#myname');
+        let stop;
+        const showMyName = () => {
+            myName.innerHTML = "Loading..."
+            stop = setTimeout(() => myName.innerHTML = "Mayur Parmar", 1000)
+        }
+        const clearTimeOut = document.querySelector('#clearTimeOut');
+        clearTimeOut.addEventListener('click', () => {
+            clearTimeout(stop)
+        })
+
+        btntime.addEventListener('click', showMyName);
+        //Timing event end
+
+        const me = () => alert('I am Function...');
+        const button = document.getElementById('button');
+        button.onclick = function () {
+            alert('I am id fetch in then apply onclick..');
+        }
+        button.onclick = function () {
+            console.log('I am id fetch in then apply onclick..');
+        }
+        const fouthWay = document.querySelector('#btn');
+        fouthWay.addEventListener('click', () => alert('I am use querySelectore'));
+        fouthWay.addEventListener('click', () => console.log('I am use querySelectore'));
+    </script>
+</body>
+
+</html>

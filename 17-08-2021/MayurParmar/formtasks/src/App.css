@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-image: linear-gradient( #FE0766, #FA5440);
+  min-height: 100vh;
+}
+
+.form {
+  display: flex;
+  min-height: 100vh;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.form-container {
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 1px;
+  padding: 40px;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.btn {
+  font-size: 18px;
+  color: #fff;
+  background-color: #6236FF;
+  border-radius: 40px;
+  outline: none;
+  border-color: #6236FF;
+  padding: 10px;
+}
+
+.form-container span {
+  color: red;
+  font-size: 12px;
+  padding-top: 2px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form-container select {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form-container input, textarea, select {
+  font-size: 14px;
+  color: gray;
+  padding-top: 4px;
+  text-transform: capitalize;
+  outline: none;
+  padding: 4px;
+}
+
+.table{
+  border: 1px;
+}
