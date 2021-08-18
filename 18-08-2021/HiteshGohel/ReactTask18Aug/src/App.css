@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  width: 50vw;
+  padding: 15px;
+  margin-top: 5rem;
+  border: 1px solid gray;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-label {
+  margin: 0 5px;
+  align-items: center;
+}
+
+.checkbox-text {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.error-text {
+  color: red;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.showText {
+  color: navy;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.displayData-container {
+  margin: 2rem 0;
+  border-top: 1px solid gray;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.displayData-div {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin: 3px;
+  width: 50%;
+}
