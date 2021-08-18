@@ -1,12 +1,10 @@
 import "./App.css";
-import Form from './components/form';
-import Harsh from "./components/Harsh";
+import Form from "./components/form";
 
 function App() {
   return (
     <div className="App">
-      <Form/>
-      {/* <Harsh /> */}
+      <Form />
     </div>
   );
 }
