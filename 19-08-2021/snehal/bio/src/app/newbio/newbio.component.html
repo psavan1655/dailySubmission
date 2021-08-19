@@ -1,0 +1,5 @@
+<div class="form-grop">
+    <input type="text" class="form-control" [(ngModel)]="post" name="post">
+    <button type="submmit" (click)="AddPost(post)">ADDpost</button>
+</div>
+<app-child [childpost]=AddPostparent></app-child>

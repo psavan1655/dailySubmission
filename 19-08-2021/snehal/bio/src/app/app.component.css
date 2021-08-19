@@ -1,0 +1,35 @@
+table{   
+
+    border:1px solid chocolate;
+    border-radius:2rem;
+    background-color:lightyellow;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 700px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+input.ng-invalid
+{
+    border:1px solid  red;
+}
+input.ng-valid
+{
+    border:1px solid green;
+}
+.error
+{
+    color: red;
+}
+.header
+{
+    background-color: cyan;
+    padding:30px;
+    margin: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

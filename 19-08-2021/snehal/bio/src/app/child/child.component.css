@@ -1,0 +1,12 @@
+table{   
+
+    border:1px solid chocolate;
+    border-radius:2rem;
+    background-color:lightsalmon;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 700px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    width: 580px;
+}

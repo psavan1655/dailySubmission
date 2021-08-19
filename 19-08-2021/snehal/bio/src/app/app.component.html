@@ -1,0 +1,123 @@
+<div class="header">
+
+  <a routerLink="practice">Practice </a>
+  <a routerLink="newbio"> Newbio</a>
+</div>
+<form class="form-control" style="align-items: center;" #simpleform="ngForm" (ngSubmit)="onSubmit(simpleform.value)">
+
+  <table>
+    <h1>Fill This Form</h1>
+    <tr>First Name:<input type="text" #fname="ngModel" ngModel name="fname" id="fname" placeholder="Enter Name"
+        required><br>
+      <span *ngIf="fname.invalid" class="error">firstname is required</span>
+
+    </tr>
+    <tr>Last Name:<input type="text" #lname="ngModel" ngModel name="lname" id="lname" placeholder="Enter Surname"
+        required><br>
+      <span *ngIf="lname.invalid" class="error">last name is required</span>
+    </tr>
+    <tr>Address:<textarea minlength="100" #address="ngModel" ngModel name="address"
+        placeholder="Enter address min 100  char" required></textarea><br>
+      <span *ngIf="address.invalid" class="error">address is minimum 100 char</span>
+    </tr>
+    <tr>Select Profile
+      <!-- <img [src]="url"> -->
+
+      <input type="file" #img="ngModel" ngModel name="img" accept="image/jpg,image/jpeg,image/png"
+        (change)="onSelectfile($event)" required data-max-size="2048"><br>
+      <span *ngIf="img.invalid" class="error">image is required</span>
+    </tr>
+    <!-- multiple select -->
+    <input type="file" (change)="onSelectDocumentFile($event)" multiple>
+
+    <!-- <tr>Select Profile:<input type="file" #img="ngModel" ngModel name="img" accept="image/jpg,image/jpeg,image/png"
+        required><br>
+      <span *ngIf="img.invalid" class="error">image is required</span>
+    </tr> -->
+
+    <tr>Select Gender:<input type="radio" #gen="ngModel" ngModel name="gen" value="male" required>Male
+      <input type="radio" name="gen" #gen="ngModel" ngModel value="female" required>female
+      <input type="radio" name="gen" #gen="ngModel" ngModel value="trans" required>trans<br>
+      <span *ngIf="gen.invalid" class="error">plz select the gender</span>
+    </tr>
+    <tr>Select Hobby:<select value="hobby" #hobby="ngModel" ngModel name="hobby" multiple required>
+        <option value="hokey">hokey</option>
+        <option value="footboll">footboll</option>
+        <option value="cricket"> cricket</option>
+        <option value="batminton">batminton</option>
+        <option value="wallyball">wallyball</option>
+      </select>
+      <span *ngIf="hobby.invalid" class="error">Hobby is required</span>
+    </tr>
+    <tr>
+      Country
+      <select (change)="changeCountry($event)" #country="ngModel" ngModel name="country" required>
+        <option selected disabled>Select Country</option>
+        <option *ngFor="let country of countryList">{{country.name}} </option>
+      </select><br>
+      <span *ngIf="country.invalid" class="error"> plz select country</span>
+      <br>
+      State
+      <select ngModel #state="ngModel" name="State" required>
+        <option selected disabled>Select State</option>
+        <option *ngFor="let state of  statesi">{{state}} </option>
+      </select><br>
+      <span *ngIf="state.invalid" class="error">plz select state</span>
+    </tr>
+    <tr>
+      Enter Pincode:
+      <input type="text" ngModel name="pin" #pin="ngModel" pattern="[0-9]{6}" maxlength="6" placeholder="Enter Pincode"
+        required>
+      <br>
+      <span *ngIf="pin.invalid" class="error">pincode is required</span>
+    </tr>
+    <tr>Enter Email Address<input type="email" #email="ngModel" ngModel name="email"
+        ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Enter Email"
+        required><br>
+      <span *ngIf="email.invalid" class="error">email is required</span>
+    </tr>
+
+    <tr>Enter contact no:<input type="text" ngModel name="contactno" #conn="ngModel" pattern="[0-9]{10}" maxlength="10"
+        placeholder="Enter Contactno:" required>
+      <br><span *ngIf="conn.invalid" class="error">contact is required</span>
+    </tr>
+    <button type="submit" [disabled]="!simpleform.valid">Submit</button>
+  </table>
+</form>
+<!--     
+    <input ngModel name="nname">
+    <span id="nname">{{nname}}</span>
+    <input ngModel name="mname">
+    <span id="mname">{{mname}}</span>
+    <button type="submit">Submit</button>
+  </table>-->
+
+
+<!-- <input type="text" (input)="handleInput($event)" />
+<p>You entered {{value1}}</p> -->
+
+
+<table style="width: 500px;">
+  <p>first name : {{firname}}</p>
+  <p>last name: {{lastname}}</p>
+  <p>Address is: {{aaddress}}</p>
+  <!-- single file upload -->
+  <p>profile:</p><img [src]="url" width="150">
+
+  <p>Gender : {{ggender}}</p>
+  <p> Hobby : {{hHobby}}</p>
+  <p>Country : {{ccountry}}</p>
+  <p> State : {{sstate}}</p>
+  <p>Pincode : {{ppincode}}</p>
+  <p> Email : {{eemail}}</p>
+  <p> Contact : {{CContact}} </p>
+  <!-- multiple file upload -->
+
+  Multiple file selected:: <img *ngFor="let urls of urls" [src]="urls" width="150" height="200">
+
+
+</table>
+<!-- <app-newbio></app-newbio> -->
+
+<!-- <app-practice></app-practice> -->
+<router-outlet></router-outlet>
