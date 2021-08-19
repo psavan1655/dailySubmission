@@ -1,0 +1,24 @@
+<form #simpleform="ngForm" (ngSubmit)="getvalues(simpleform.value)">
+    <table>
+
+        <div *ngFor="let p of childpost">
+            <p>{{p}}</p>
+        </div>
+        <br>
+        <label>First Name:</label><br>
+        <input type="text" ngModel name="fname" placeholder="Enter Your Name">
+        <br><br>
+        <label>Last Name:</label><br>
+        <input type="text" ngModel name="lname" placeholder="Enter Your Surname"><br><br>
+
+        <label>Age</label><br>
+        <input type="text" ngModel name="age" placeholder="Enter your age"><br><br>
+
+        <label>Address</label><br>
+        <input type="text" name="Address" ngModel placeholder="Enter Address"><br><br>
+        <button type="submit">Submit</button>
+    </table>
+    <p id="demo"></p>
+
+
+</form>
