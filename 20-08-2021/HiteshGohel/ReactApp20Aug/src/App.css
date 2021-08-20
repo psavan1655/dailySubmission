@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  width: 50vw;
+  padding: 25px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  border: 1px solid gray;
+  box-shadow: 5px 10px 18px white;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-label {
+  margin: 0 5px;
+  align-items: center;
+}
+
+.checkbox-text {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.error-text {
+  color: red;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.showText {
+  color: navy;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.displayData-container {
+  margin: 2rem 0;
+  border-top: 1px solid gray;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.displayData-div {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin: 3px;
+  width: 50%;
+}
+
+.display-table {
+  margin: 5px 2rem;
+  width: 50%;
+  background-color: white;
+  color: black;
+}
+
+.pdf-btn-div {
+  display: none;
+  margin: 2rem 0;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+h6 {
+  margin-top: 10px !important;
+}
+.form-label {
+  margin: 15px 0px 0px 0px;
+}
+.form-input {
+  width: 100%;
+  height: 35px;
+  color: #000;
+  border-radius: 5px;
+}
+
+.form-control {
+  margin-bottom: 0 !important;
+}
+.submit-btn {
+  width: 100% !important;
+  margin-top: 25px;
+  border-radius: 50px !important;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.form-control {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-border {
+  background-color: transparent;
+  margin-top: 100px;
+  border: 1px solid white;
+  box-shadow: 5px 10px 18px white;
+
+  padding: 30px;
+}
+
+.link-class {
+  color: white;
+  text-decoration: none;
+}
+
+.link-class:hover {
+  color: greenyellow;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.link-class:focus {
+  color: greenyellow !important;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+.navbar {
+  margin: 0 !important;
+}
+
+.contact-error {
+  color: red;
+  font-size: 11px;
+  margin-left: 2px;
+}
+
+@media only screen and (max-width: 992px) {
+  .fullform {
+    padding: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .register-container {
+    width: 90%;
+  }
+}
