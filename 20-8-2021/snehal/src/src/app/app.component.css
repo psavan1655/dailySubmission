@@ -1,0 +1,33 @@
+.footer{
+    background-color: darkslategrey;
+}
+.header{
+    background-color:darkslategray;
+    padding: 20px;
+    margin-left: 3px;
+
+}
+a{
+    color: pink;
+    text-decoration: none;
+
+}
+.im1{
+    background-color: plum;
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    margin-left: 150px;
+}
+.im2{
+ background-color:powderblue;
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    margin-left: 150px;
+}
+.img1{
+    width: 1000px;   
+}

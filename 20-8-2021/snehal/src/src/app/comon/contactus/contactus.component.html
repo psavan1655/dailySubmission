@@ -1,0 +1,20 @@
+<form #simpleform="ngForm" (ngSubmit)="getvalues(simpleform.value)">
+    <table>
+
+
+        <label>First Name:</label><br>
+        <input type="text" ngModel name="fname" placeholder="Enter Your Name" required>
+        <br><br>
+        <label>Email</label><br>
+        <input type="text" ngModel name="email" placeholder="Enter tour Email" required><br><br>
+
+
+        <label>Description</label><br>
+        <input type="text" name="msg" ngModel placeholder="Enter Msg" required><br><br>
+        <button type="submit" [disabled]="!simpleform.valid">Submit</button>
+    </table>
+    <p style="text-align: center;">{{contact}}</p>
+
+
+
+</form>

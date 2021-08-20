@@ -1,0 +1,23 @@
+table{   
+
+    border:1px solid chocolate;
+    border-radius:2rem;
+    background-color:lightyellow;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 30%;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+input.ng-invalid
+{
+    border:1px solid  red;
+}
+input.ng-valid
+{
+    border:1px solid green;
+}
+/* .error
+{
+    color: red;
+} */
