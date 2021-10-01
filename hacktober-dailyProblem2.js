@@ -66,5 +66,4 @@
 	var n = arr.length;
 	subarrayDivisibleByK(arr, n, k);
 	
-	// This code is contributed by rdtank.
 	</script>
